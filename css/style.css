@@ -248,11 +248,17 @@ span::before {
 footer {
     text-align: center;
 }
-
+/* 导航栏字体颜色 */
 .smooth-text {
     color: azure;
     transition: color 0.5s;
 }
 .smooth-text:hover {
     color: rgb(0, 140, 255);
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
 }
