@@ -32,7 +32,7 @@ header h1 {
     left: 120px;
     top: 0;
     line-height: 80px;
-    background-image: url(images/Logo.png);
+    background-image: url(../images/Logo.png);
     background-size: 100%, auto;
     background-repeat: no-repeat;
     background-position: center;
