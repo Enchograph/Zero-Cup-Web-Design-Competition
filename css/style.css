@@ -52,6 +52,15 @@ header li {
     margin-right: 4vw;
 }
 
+header a img {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    line-height: 40px;
+    width: 250px;
+    text-indent: -9999px;
+}
+
 header a {
     color: azure;
     text-decoration: none;
