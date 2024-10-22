@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url(Fonts/HanYiZhongSongJian-1.ttf) format('truetype'), url(Fonts/trajan-pro-cufonfonts/TrajanPro-Regular.ttf), serif;
+}
+
+body {
+
+    background-color: #000000;
+}
+
+main {
+    text-align: center;
+}
+
+header {
+    background-color: rgba(35, 28, 26, 0.8);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    font-family: iconfont;
+    font-size: 1.5em;
+}
+
+header h1 {
+    color: #fff6e6;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-image: url(images/Logo.png);
+    background-size: 100%, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -9999px;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+
+    margin-top: auto, auto;
+    line-height: 4em;
+    font-family: "Trajan Pro", Times, serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #fff6e6;
+}
+
+p {
+
+    margin-top: auto, auto;
+    font-family: "Trajan Pro", Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff6e6;
+}
+
+.sports h1 {
+
+    line-height: 4em;
+    font-family: "Trajan Pro", Times, serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #fff6e6;
+}
+
+span::before {
+    content: '';
+    display: inline-block;
+    height: 700px;
+    width: 0;
+}
+
+.gallery {
+    padding: 75px 0;
+    margin: 0 10%;
+    width: 1800px;
+    text-align: center;
+
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 70vh;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+
+    &:hover {
+        cursor: pointer;
+        flex: 7;
+    }
+}
+
+.item-1 {
+    background-image: url(images/Olympic-Cities/2000Sydney.jpg);
+
+}
+
+.item-2 {
+    background-image: url(images/Olympic-Cities/2004Athens.jpg);
+}
+
+.item-3 {
+    background-image: url(images/Olympic-Cities/2012London.jpg);
+}
+
+.item-4 {
+    background-image: url(images/Olympic-Cities/2008Beijing.jpg);
+}
+
+.item-5 {
+    background-image: url(images/Olympic-Cities/2016Rio.jpg);
+}
+
+.item-6 {
+    background-image: url(images/Olympic-Cities/2020Tokyo.jpg);
+}
+
+.item-7 {
+    background-image: url(images/Olympic-Cities/2024Paris.jpg);
+}
+
+
+
+
+/*!sportsinside*/
+.spr {
+    display: inline-block;
+    width: 1800px;
+    height: 100px;
+
+    margin: 10px 10%;
+}
+
+.sports {
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
+}
+
+.sports:hover,
+.sports:focus,
+.sports:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    z-index: 10;
+    cursor: pointer;
+    flex: 7;
+}
+
+.image1 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.image2 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 0;
+    left: 1.5%;
+    z-index: 2;
+}
+
+.image3 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 0;
+    left: 3%;
+    z-index: 3;
+}
+
+.image4 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 0;
+    left: 4.5%;
+    z-index: 4;
+}
+
+.image5 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 0;
+    left: 6%;
+    z-index: 5;
+}
+
+.image6 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 0;
+    left: 6.5%;
+    z-index: 6;
+}
+
+footer {
+    text-align: center;
+}
