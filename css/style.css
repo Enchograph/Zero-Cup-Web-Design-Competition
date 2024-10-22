@@ -248,3 +248,11 @@ span::before {
 footer {
     text-align: center;
 }
+
+.smooth-text {
+    color: azure;
+    transition: color 0.5s;
+}
+.smooth-text:hover {
+    color: rgb(0, 140, 255);
+}
