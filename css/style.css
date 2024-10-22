@@ -29,7 +29,7 @@ header {
 header h1 {
     color: #fff6e6;
     position: absolute;
-    left: 120px;
+    left: 100px;
     top: 0;
     line-height: 80px;
     background-image: url(../images/Logo.png);
@@ -53,12 +53,14 @@ header li {
 }
 
 header a {
-    color: white;
+    color: azure;
     text-decoration: none;
+    transition: color 0.5s;
 }
 
 header a:hover {
-    text-decoration: underline;
+    color: rgb(0, 140, 255);
+    text-decoration: none;
 }
 
 h1 {
@@ -247,18 +249,4 @@ span::before {
 
 footer {
     text-align: center;
-}
-/* 导航栏字体颜色 */
-.smooth-text {
-    color: azure;
-    transition: color 0.5s;
-}
-.smooth-text:hover {
-    color: rgb(0, 140, 255);
-}
-a {
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
 }
