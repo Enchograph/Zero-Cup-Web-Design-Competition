@@ -73,6 +73,38 @@ header a:hover {
     text-decoration: none;
 }
 
+h1 {
+
+    margin-top: auto, auto;
+    line-height: 4em;
+    font-family: "Trajan Pro", Times, serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #fff6e6;
+}
+
+p {
+
+    margin-top: auto, auto;
+    font-family: "Trajan Pro", Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff6e6;
+}
+
+span::before {
+    content: '';
+    display: inline-block;
+    height: 700px;
+    width: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+/*!gamebutton*/
+
 .btn {
     font-family: sans-serif;
     overflow: visible;
@@ -141,40 +173,8 @@ header a:hover {
     border-radius: 36px;
 }
 
-h1 {
 
-    margin-top: auto, auto;
-    line-height: 4em;
-    font-family: "Trajan Pro", Times, serif;
-    font-size: 44px;
-    text-transform: uppercase;
-    color: #fff6e6;
-}
-
-p {
-
-    margin-top: auto, auto;
-    font-family: "Trajan Pro", Times, serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #fff6e6;
-}
-
-.sports h1 {
-
-    line-height: 4em;
-    font-family: "Trajan Pro", Times, serif;
-    font-size: 44px;
-    text-transform: uppercase;
-    color: #fff6e6;
-}
-
-span::before {
-    content: '';
-    display: inline-block;
-    height: 700px;
-    width: 0;
-}
+/*!gallery*/
 
 .gallery {
     padding: 75px 0;
@@ -261,6 +261,15 @@ span::before {
 
 }
 
+.sports h1 {
+
+    line-height: 4em;
+    font-family: "Trajan Pro", Times, serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #fff6e6;
+}
+
 .sports:hover,
 .sports:focus,
 .sports:active {
@@ -324,9 +333,10 @@ span::before {
     left: 6.5%;
     z-index: 6;
 }
-.game{
+
+/*!game*/
+
+.game {
     text-align: center;
 }
-footer {
-    text-align: center;
-}
+
