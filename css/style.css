@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: iconfont;
-    src: url(Fonts/HanYiZhongSongJian-1.ttf) format('truetype'), url(Fonts/trajan-pro-cufonfonts/TrajanPro-Regular.ttf), serif;
+    src: url(../Fonts/HanYiZhongSongJian-1.ttf) format('truetype'), url(../Fonts/trajan-pro-cufonfonts/TrajanPro-Regular.ttf), serif;
 }
 
 body {
@@ -24,6 +24,7 @@ header {
     position: fixed;
     font-family: iconfont;
     font-size: 1.5em;
+    z-index: 9999;
 }
 
 header h1 {
@@ -71,6 +72,7 @@ header a:hover {
     color: rgb(0, 140, 255);
     text-decoration: none;
 }
+
 
 h1 {
 
@@ -137,32 +139,32 @@ span::before {
 }
 
 .item-1 {
-    background-image: url(images/Olympic-Cities/2000Sydney.jpg);
+    background-image: url(../images/Olympic-Cities/2000Sydney.jpg);
 
 }
 
 .item-2 {
-    background-image: url(images/Olympic-Cities/2004Athens.jpg);
+    background-image: url(../images/Olympic-Cities/2004Athens.jpg);
 }
 
 .item-3 {
-    background-image: url(images/Olympic-Cities/2012London.jpg);
+    background-image: url(../images/Olympic-Cities/2012London.jpg);
 }
 
 .item-4 {
-    background-image: url(images/Olympic-Cities/2008Beijing.jpg);
+    background-image: url(../images/Olympic-Cities/2008Beijing.jpg);
 }
 
 .item-5 {
-    background-image: url(images/Olympic-Cities/2016Rio.jpg);
+    background-image: url(../images/Olympic-Cities/2016Rio.jpg);
 }
 
 .item-6 {
-    background-image: url(images/Olympic-Cities/2020Tokyo.jpg);
+    background-image: url(../images/Olympic-Cities/2020Tokyo.jpg);
 }
 
 .item-7 {
-    background-image: url(images/Olympic-Cities/2024Paris.jpg);
+    background-image: url(../images/Olympic-Cities/2024Paris.jpg);
 }
 
 
