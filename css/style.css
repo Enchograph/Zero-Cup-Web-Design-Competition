@@ -242,7 +242,6 @@ footer {
     display: inline-block;
     width: 1800px;
     height: 100px;
-
     margin: 10px 10%;
 }
 
@@ -262,14 +261,12 @@ footer {
 }
 
 .sports h1 {
-
     line-height: 4em;
     font-family: "Trajan Pro", Times, serif;
     font-size: 44px;
     text-transform: uppercase;
     color: #fff6e6;
 }
-
 .sports:hover,
 .sports:focus,
 .sports:active {

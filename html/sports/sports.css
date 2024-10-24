@@ -145,3 +145,101 @@ footer {
     font-family: "华文中宋";
     font-size: 20px;
 }
+
+/*!图片轮播*/
+
+#box {
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+#lunboimg {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-100%);
+}
+
+#box a {
+    height: 400px;
+    width: 400px;
+}
+
+#box img {
+    margin: 0 auto;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transition: opacity 1s;
+}
+
+#box:hover #selector {
+    display: flex;
+}
+
+#selector {
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    justify-content: space-between;
+    z-index: 100;
+    margin: auto auto;
+    position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+}
+
+#selector>span {
+    width: 35px;
+    height: 15px;
+    border-radius: 7.5px;
+    background-color: #b8860b;
+    opacity: 0.8;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+#selector>span:hover {
+    background-color: #e5c85b;
+}
+
+#left,
+#right {
+    width: 40px;
+    height: 240px;
+    position: absolute;
+    top: 90px;
+    background-color: #b8860b;
+    font-size: 35px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 100%;
+    cursor: pointer;
+    color: #fae596;
+}
+
+#left {
+    left: 0;
+    margin: auto auto;
+}
+
+#right {
+    right: 0;
+    margin: auto auto;
+}
+
+#left:hover,
+#right:hover {
+    background-color: #ce8f00;
+    color: #ffec89;
+}
