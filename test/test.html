@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            .box{
+                background-color: rgba(5, 10, 20, 0.62);
+                background-image: url(../images/Olympic-Cities/2024Paris.jpg);
+                background-size: 100%;
+                animation: slide 40s infinite;
+            }
+            @keyframes slide{
+                0%{
+                    background-image: url(../images/Olympic-Cities/2024Paris.jpg);
+                }
+                20%{
+                    background-image: url(../images/Olympic-Cities/2020Tokyo.jpg);
+                }
+                40%{
+                    background-image: url(../images/Olympic-Cities/2016Rio.jpg);
+                }
+                60%{
+                    background-image: url(../images/Olympic-Cities/2012London.jpg);
+                }
+                80%{
+                    background-image: url(../images/Olympic-Cities/2008Beijing.jpg);
+                }
+                100%{
+                    background-image: url(../images/Olympic-Cities/2024Paris.jpg);
+                }
+            }
+            .bimg{
+                width: 800px;
+                height: 200px;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url(../images/Logo.png);;
+                background-size: 800px;
+                background-color: #ffffff00;
+            }
+        </style>
+    </head>
+    <body class="box">
+        <div class="bimg"></div>
+        <div style="width: 100px;height: 200px;background-color: blue;"></div>
+    </body>
+</html>
