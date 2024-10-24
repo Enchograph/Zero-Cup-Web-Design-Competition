@@ -13,4 +13,10 @@
     暗金色：#b8860b
 
 
-### 进度
+### 待办
+- sports页面
+<img src="./OriginalResources/readme/sports.png" width="50%">
+- 标题栏改进
+<img src="./OriginalResources/readme/顶栏.png" width="50%">
+- 在主页的前两个section末加“详细内容”按钮，按钮样式已在styles.css .btn类中提供
+-Olympic页面
