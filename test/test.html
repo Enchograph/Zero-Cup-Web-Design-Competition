@@ -6,6 +6,8 @@
                 background-image: url(../images/Olympic-Cities/2024Paris.jpg);
                 background-size: 100%;
                 animation: slide 40s infinite;
+                height:calc(100vh);
+                width:calc(100vw);
             }
             @keyframes slide{
                 0%{
@@ -37,10 +39,20 @@
                 background-size: 800px;
                 background-color: #ffffff00;
             }
+            .main{
+                position: relative;
+                margin-top: calc(60vh);
+                /* height:calc(100vh); */
+                width:calc(100vw);
+                background-color: #000000;
+                color:#fff;
+            }
         </style>
     </head>
     <body class="box">
         <div class="bimg"></div>
-        <div style="width: 100px;height: 200px;background-color: blue;"></div>
+        <div class="main">
+            <h1>Hello World</h1>
+        </div>
     </body>
 </html>
