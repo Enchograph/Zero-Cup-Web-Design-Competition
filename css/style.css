@@ -11,10 +11,12 @@
 body {
 
     background-color: #000000;
+    overflow-x: hidden;
 }
 
 main {
     text-align: center;
+    margin-top: 8px;
 }
 
 header {
