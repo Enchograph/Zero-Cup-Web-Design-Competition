@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: iconfont;
-    src: url(../Fonts/HanYiZhongSongJian-1.ttf) format('truetype'), url(../Fonts/trajan-pro-cufonfonts/TrajanPro-Regular.ttf), serif;
+    src: url(../Fonts/trajan-pro-cufonfonts/TrajanPro-Regular.ttf), url(../Fonts/HanYiZhongSongJian-1.ttf) format('truetype');
 }
 
 body {
@@ -22,7 +22,7 @@ header {
     height: 80px;
     width: 100%;
     position: fixed;
-    font-family: iconfont;
+    font-family: iconfont, serif;
     font-size: 1.5em;
     z-index: 9999;
 }
@@ -77,7 +77,7 @@ h1 {
 
     margin-top: auto, auto;
     line-height: 4em;
-    font-family: "Trajan Pro", Times, serif;
+    font-family: iconfont, serif;
     font-size: 44px;
     text-transform: uppercase;
     color: #fff6e6;
@@ -86,7 +86,7 @@ h1 {
 p {
 
     margin-top: auto, auto;
-    font-family: "Trajan Pro", Times, serif;
+    font-family: iconfont, serif;
     font-size: 20px;
     text-transform: uppercase;
     color: #fff6e6;
@@ -262,7 +262,7 @@ footer {
 
 .sports h1 {
     line-height: 4em;
-    font-family: "Trajan Pro", Times, serif;
+    font-family: iconfont, serif;
     font-size: 44px;
     text-transform: uppercase;
     color: #fff6e6;
