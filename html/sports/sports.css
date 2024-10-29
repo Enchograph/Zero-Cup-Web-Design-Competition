@@ -83,13 +83,26 @@ h1 {
     color: #fff6e6;
 }
 
+h2 {
+
+    margin-top: auto, auto;
+    line-height: 4em;
+    font-family: iconfont, serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff6e6;
+}
+
 p {
 
     margin-top: auto, auto;
     font-family: iconfont, serif;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     color: #fff6e6;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left
 }
 
 footer {
@@ -146,100 +159,85 @@ footer {
     font-size: 20px;
 }
 
-/*!图片轮播*/
+/*!徽标选择*/
 
-#box {
-    width: 60%;
-    height: 500px;
-    overflow: hidden;
+
+
+
+
+
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.image-container {
     position: relative;
-    margin: auto;
-    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
+    margin: auto,10%;
 }
 
-#lunboimg {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-100%);
-}
 
-#box a {
-    height: 400px;
-    width: 400px;
-}
-
-#box img {
-    margin: 0 auto;
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    transition: opacity 1s;
-}
-
-#box:hover #selector {
-    display: flex;
-}
-
-#selector {
-    width: 80px;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
-    display: none;
-    justify-content: space-between;
-    z-index: 100;
-    margin: auto auto;
-    position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-
-}
-
-#selector>span {
-    width: 35px;
-    height: 15px;
-    border-radius: 7.5px;
-    background-color: #b8860b;
-    opacity: 0.8;
-    margin: auto;
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
     cursor: pointer;
-
+    border-radius: 10px;
+    /* 鼠标放在图片上变成手型 */
 }
 
-#selector>span:hover {
-    background-color: #e5c85b;
+.image-container:hover img {
+    transform: scale(1.1);
+    /* 鼠标放在图片上图片变大 */
+    transform: rotateX(-10deg) rotateY(20deg);
 }
 
-#left,
-#right {
-    width: 40px;
-    height: 240px;
+.description {
     position: absolute;
-    top: 90px;
-    background-color: #b8860b;
-    font-size: 35px;
-    border-radius: 8px;
-    text-align: center;
-    line-height: 100%;
-    cursor: pointer;
-    color: #fae596;
-}
-
-#left {
+    top: 200px;
     left: 0;
-    margin: auto auto;
-}
-
-#right {
     right: 0;
-    margin: auto auto;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.65s ease;
+    transform: translateY(-100%);
+    margin-bottom: 10px;
+    /* 为动画提供空间 */
+    overflow: hidden;
+    /* 确保边框不会超出描述文字的边界 */
 }
 
-#left:hover,
-#right:hover {
-    background-color: #ce8f00;
-    color: #ffec89;
+.description-border {
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    right: -20%;
+    height: 0;
+    /* 初始高度为0 */
+    border: 2px solid #F9EDAD;
+    /* 黄色边框 */
+    border-radius: 0 30px 0 30px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+    /* 防止边框影响鼠标事件 */
 }
+
+.image-container:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-container:hover .description-border {
+    height: 280%;
+    /* 鼠标悬停时，边框高度与描述文字相同 */
+    opacity: 1;
+}
+
