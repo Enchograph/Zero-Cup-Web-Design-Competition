@@ -7,7 +7,10 @@
     font-family: iconfont;
     src: url(../Fonts/trajan-pro-cufonfonts/TrajanPro-Regular.ttf), url(../Fonts/HanYiZhongSongJian-1.ttf) format('truetype');
 }
-
+@font-face{
+    font-family: Exo;
+    src: url(../Fonts/Exo-Medium.ttf);
+}
 body {
 
     background-color: #000000;

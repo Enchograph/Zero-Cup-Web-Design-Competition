@@ -25,14 +25,14 @@
     <style>
         .nav-holder{
             width: 80%;
-            height:200px;
+            height:100px;
             text-align: center;
             margin-left: 10%;
             margin-right: 10%;
             border-top-right-radius: 20px;
             border-bottom-left-radius: 20px;
             border-width: 3px;
-            border-color: #fae596;
+            border-color: #00000000;
             border-style: solid;
             text-align: center;
             padding:20px;
@@ -41,20 +41,41 @@
         }
         .nav-holder:hover{
             transform: scale(1.02);
-            height:400px;
+            height:600px;
+            border-color: #fae596;
         }
         .nav-holder .nav-tag{
-            width: 13%;
-            height:40px;
-            line-height: 30px;
-            font-size: 25px;
-            color:#666666;
             display: inline-block;
+            width: 13%;
+            height:60px;
+            line-height: 40px;
+            font-size: 30px;
+            color:#666666;
+            transition: all 0.5s ease-in-out;
+            font-family: Exo;
+        }
+        .nav-holder .nav-tag a{
+            color:#666666;
+            text-decoration-line: none;
             transition: all 0.5s ease-in-out;
         }
-        .nav-holder .nav-tag:hover{
+        .nav-holder:hover .nav-tag{
+            transform: scale(1.1);
+            color:#fae596;
+        }
+        .nav-holder .nav-tag a:hover{
             transform: scale(1.1);
             color:#fae596
+        }
+        .nav-holder .nav-intro{
+            height:0px;
+            width: 100%;
+            background: linear-gradient(0deg,#FFFFFF 8.68%,#8D8D8D 48.19%,#000000 100%);
+            border-bottom-left-radius: 18px;
+            transition: all 0.5s ease-in-out;
+        }
+        .nav-holder:hover .nav-intro{
+            height:570px;
         }
     </style>
     <main>
@@ -62,13 +83,14 @@
         <section class="olym">
             <h1>奥运会上的运动健儿 - 导航页</h1>
             <div class="nav-holder">
-                <div class="nav-tag"><a href="./2024Paris.html">24</a></div>
-                <div class="nav-tag"><a href="./2020Tokyo.html">20</a></div>
-                <div class="nav-tag"><a href="./2016Rio.html">16</a></div>
-                <div class="nav-tag">12</div>
-                <div class="nav-tag">08</div>
-                <div class="nav-tag">04</div>
-                <div class="nav-tag">00</div>
+                <div class="nav-tag" style="left:0%"><a href="./2024Paris.html">24</a></div>
+                <div class="nav-tag" style="left:14%"><a href="./2020Tokyo.html">20</a></div>
+                <div class="nav-tag" style="left:28%"><a href="./2016Rio.html">16</a></div>
+                <div class="nav-tag" style="left:42%"><a href="./2012London.html">12</a></div>
+                <div class="nav-tag" style="left:56%"><a href="./2008Beijing.html">08</a></div>
+                <div class="nav-tag" style="left:70%"><a href="./2004Athens.html">04</a></div>
+                <div class="nav-tag" style="left:84%"><a href="./2000Sydney.html">00</a></div>
+                <div class="nav-intro"></div>
             </div>
         </section>
 
