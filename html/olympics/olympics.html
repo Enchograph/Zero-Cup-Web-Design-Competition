@@ -41,7 +41,7 @@
         }
         .nav-holder:hover{
             transform: scale(1.02);
-            height:600px;
+            height:1000px;
             border-color: #fae596;
         }
         .nav-holder .nav-tag{
@@ -54,6 +54,7 @@
             transition: all 0.5s ease-in-out;
             font-family: Exo;
         }
+
         .nav-holder .nav-tag a{
             color:#666666;
             text-decoration-line: none;
@@ -69,32 +70,54 @@
         }
         .nav-holder .nav-back{
             position: absolute;
-            top: 70px;
+            top: 0px;
             left: 0px;
             height:0px;
             width: 100%;
-            background: linear-gradient(0deg,#FFFFFF 8.68%,#8D8D8D 48.19%,#000000 100%);
+            /* background: linear-gradient(0deg,#FFFFFF 8.68%,#8D8D8D 48.19%,#000000 100%); */
             background-size: 100%;
             border-bottom-left-radius: 18px;
             transition: all 0.5s ease-in-out;
         }
         .nav-holder:hover .nav-back{
-            height:570px;
+            height:940px;
+        }
+        .nav-holder .nav-intro section{
+            color:#fff;
+            display: none;
         }
     </style>
     <main>
         <br><br><br><br><br><br>
+        <script>
+            function select(tag){
+                for(var i = 1;i<=7;i++){
+                    document.getElementById('s'+i).style.display = 'none';
+                }
+                document.getElementById(tag).style.display = 'block';
+            }
+        </script>
         <section class="olym">
             <h1>奥运会上的运动健儿 - 导航页</h1>
             <div class="nav-holder">
-                <div class="nav-tag" style="left:0%"><a href="#htag1">24</a></div>
-                <div class="nav-tag" style="left:14%"><a href="#tag2">20</a></div>
-                <div class="nav-tag" style="left:28%"><a href="#tag3">16</a></div>
-                <div class="nav-tag" style="left:42%"><a href="#tag4">12</a></div>
-                <div class="nav-tag" style="left:56%"><a href="#tag5">08</a></div>
-                <div class="nav-tag" style="left:70%"><a href="#tag6">04</a></div>
-                <div class="nav-tag" style="left:84%"><a href="#tag7">00</a></div>
-                <div class="nav-back">
+                <div class="nav-back" id="back"></div>
+                <div class="nav-tag" style="left:0%" id="tag1"><a href="" onmouseover="select('s1')">24</a></div>
+                <div class="nav-tag" style="left:14%" id="tag2"><a href=""  onmouseover="select('s2')">20</a></div>
+                <div class="nav-tag" style="left:28%" id="tag3"><a href="">16</a></div>
+                <div class="nav-tag" style="left:42%" id="tag4"><a href="">12</a></div>
+                <div class="nav-tag" style="left:56%" id="tag5"><a href="">08</a></div>
+                <div class="nav-tag" style="left:70%" id="tag6"><a href="">04</a></div>
+                <div class="nav-tag" style="left:84%" id="tag7"><a href="">00</a></div>
+                <div class="nav-intro">
+                    <section id="s1" class="section-holder">
+                        Hello?
+                    </section>
+                    <section id="s2" class="section-holder"></section>
+                    <section id="s3" class="section-holder"></section>
+                    <section id="s4" class="section-holder"></section>
+                    <section id="s5" class="section-holder"></section>
+                    <section id="s6" class="section-holder"></section>
+                    <section id="s7" class="section-holder"></section>
                 </div>
             </div>
         </section>
