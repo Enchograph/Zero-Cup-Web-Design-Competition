@@ -480,7 +480,6 @@ footer {
 .headpage{
     width:calc(100vw);
     height:calc(80vh);
-    background-image: url(../../images/Olympic-Cities/2024Paris.jpg);
     background-size: calc(100vw);
 }
 .headpage-cover{
