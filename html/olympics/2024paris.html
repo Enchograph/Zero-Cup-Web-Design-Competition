@@ -152,11 +152,11 @@
             font-family: Yahei;
             overflow: hidden;
             display: -webkit-box;
-            -webkit-line-clamp: 13;
-            line-clamp: 13;
+            -webkit-line-clamp: 10;
+            line-clamp: 10;
             -webkit-box-orient: vertical;
             line-height: 40px;
-
+            text-overflow: ellipsis;
         }
         .timelist section .title-right-box{
             display: inline-block;
@@ -208,8 +208,72 @@
                 margin-right: 2%;
                 margin-left: 0%;
             }
+            .headpage{
+                display: none;
+            }
+        }
+        .timelist section .right-box .intro .athlete-box{
+            width: 200px;
+            height: 322px;
+            display: inline-block;
+            margin: 5px 5px 5px 5px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            transition: all 0.5s ease-in-out;
+        }
+        .timelist section .right-box .intro .athlete-box:hover{
+            transform: scale(1.03);
+        }
+        .timelist section .right-box .intro .athlete-box .cover{
+            width: 200px;
+            height: 282px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;;
+        }
+        .timelist section .right-box .intro .athlete-box .name{
+            width: 200px;
+            height: 40px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;;
+            background-color: #fae596;
+        }
+        @media(max-width:1550px){
+            .timelist section .right-box .intro #a4{
+                display: none;
+            }
+        }
+        @media(max-width:1350px){
+            .timelist section .right-box .intro #a3{
+                display: none;
+            }
+        }
+        @media(max-width:1150px){
+            .timelist section .right-box .intro #a2{
+                display: none;
+            }
+        }
+        
+        .headpage{
+            width:calc(100vw);
+            height:calc(80vh);
+            background-image: url(../../images/Olympic-Cities/2024Paris.jpg);
+            background-size: calc(100vw);
+        }
+        .headpage-cover{
+            position: absolute;
+            top: calc(70vh);
+            margin-bottom:0;
+            width: calc(100vw);
+            height:calc(10vh);
+            background: linear-gradient(0deg,#000000 0%,#ff000000 100%);
+            color:#fff
         }
     </style>
+    <div class="headpage">
+        <div class="headpage-cover">
+            
+        </div>
+    </div>
     <main>
         <br><br><br><br><br><br>
         <div class="timelist">
@@ -246,7 +310,7 @@
                 <div class="right-box">
                     <div class="intro">
                         <div class="medal-title">
-                            🥇 <h2>All</h2><h2>3th</h2><h2>2th</h2><h2>1th</h2>
+                            🥇 <h2>All</h2><h2>3rd</h2><h2>2nd</h2><h2>1st</h2>
                         </div>
                         <div class="medal-content">
                             <div class="line-box">
@@ -300,7 +364,26 @@
                 <div class="left-box">
                     <div class="line"></div>
                 </div>
-                <div class="right-box"></div>
+                <div class="right-box">
+                    <div class="intro">
+                        <div class="athlete-box" id="a1">
+                            <div class="cover"></div>
+                            <div class="name"></div>
+                        </div>
+                        <div class="athlete-box" id="a2">
+                            <div class="cover"></div>
+                            <div class="name"></div>
+                        </div>
+                        <div class="athlete-box" id="a3">
+                            <div class="cover"></div>
+                            <div class="name"></div>
+                        </div>
+                        <div class="athlete-box" id="a4">
+                            <div class="cover"></div>
+                            <div class="name"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section  id="tag5">
                 <div class="title-left-box">
@@ -312,7 +395,21 @@
                 <div class="left-box">
                     <div class="line"></div>
                 </div>
-                <div class="right-box"></div>
+                <div class="right-box">
+                    <div class="intro">
+                        <div class="gallery" style="width: 100%;height:300px;margin-left: 0px;margin-right: 0px;">
+                            <div class="gallery-wrap"  style="width: 100%;height:300px">
+                                <div class="item item-1"></div>
+                                <div class="item item-2"></div>
+                                <div class="item item-3"></div>
+                                <div class="item item-4"></div>
+                                <div class="item item-5"></div>
+                                <div class="item item-6"></div>
+                                <div class="item item-7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
