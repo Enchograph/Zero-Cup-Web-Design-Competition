@@ -192,6 +192,10 @@ footer {
     color: #666666;
     padding-left: 5%;
     padding-right: 5%;
+    transition: all 0.5s ease-in-out;
+}
+.nav-holder .nav-intro .section-holder .inner-holder .intro:hover>p{
+    color: #dbdbdb;
 }
 .nav-holder  .nav-intro .section-holder .inner-holder .intro h2{
     font-family: Exo;
