@@ -25,7 +25,7 @@
     <style>
         .nav-holder{
             width: 80%;
-            height:100px;
+            height:max-content;
             text-align: center;
             margin-left: 10%;
             margin-right: 10%;
@@ -41,7 +41,7 @@
         }
         .nav-holder:hover{
             transform: scale(1.02);
-            height:1000px;
+            height:max-content;
             border-color: #fae596;
         }
         .nav-holder .nav-tag{
@@ -86,10 +86,53 @@
             color:#fff;
             display: none;
         }
+        .nav-holder .nav-intro .section-holder .inner-holder .cover{
+            display: block;
+            float: left;
+            margin: 9px 9px 9px 9px;
+            height :800px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 10px;
+            background-size: 100%;
+        }
+        .nav-holder .nav-intro .section-holder .inner-holder .intro{
+            padding: 10px;
+            line-height: 25px;
+            font-size: 20px;
+            height :282px;
+            width: auto;
+            border-radius: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #fae596;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .nav-holder .nav-intro .section-holder .inner-holder .intro p{
+            color: #b1b1b1;
+            font-family: Exo;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 11;
+            line-clamp: 11;
+            -webkit-box-orient: vertical;
+            color: #666666;
+        }
+        .nav-holder  .nav-intro .section-holder .inner-holder .intro h2{
+            font-family: Exo;
+            line-height: 50px;
+            display: inline-block;
+        }
     </style>
     <main>
         <br><br><br><br><br><br>
         <script>
+            function clear(){
+                for(var i = 1;i<=7;i++){
+                    document.getElementById('s'+i).style.display = 'none';
+                }
+            }
             function select(tag){
                 for(var i = 1;i<=7;i++){
                     document.getElementById('s'+i).style.display = 'none';
@@ -101,23 +144,87 @@
             <h1>奥运会上的运动健儿 - 导航页</h1>
             <div class="nav-holder">
                 <div class="nav-back" id="back"></div>
-                <div class="nav-tag" style="left:0%" id="tag1"><a href="" onmouseover="select('s1')">24</a></div>
-                <div class="nav-tag" style="left:14%" id="tag2"><a href=""  onmouseover="select('s2')">20</a></div>
-                <div class="nav-tag" style="left:28%" id="tag3"><a href="">16</a></div>
-                <div class="nav-tag" style="left:42%" id="tag4"><a href="">12</a></div>
-                <div class="nav-tag" style="left:56%" id="tag5"><a href="">08</a></div>
-                <div class="nav-tag" style="left:70%" id="tag6"><a href="">04</a></div>
-                <div class="nav-tag" style="left:84%" id="tag7"><a href="">00</a></div>
+                <div class="nav-tag" style="left:0%" id="tag1"><a href="./2024Paris.html" onmouseenter="select('s1')" onmouseleave="clear()">24</a></div>
+                <div class="nav-tag" style="left:14%" id="tag2"><a href="./2020Tokyo.html"  onmouseover="select('s2')" onmouseleave="clear()">20</a></div>
+                <div class="nav-tag" style="left:28%" id="tag3"><a href="./2016Rio.html" onmouseover="select('s3')" onmouseleave="clear()">16</a></div>
+                <div class="nav-tag" style="left:42%" id="tag4"><a href="./2012London.html" onmouseover="select('s4')" onmouseleave="clear()">12</a></div>
+                <div class="nav-tag" style="left:56%" id="tag5"><a href="./2008Beijing.html" onmouseover="select('s5')" onmouseleave="clear()">08</a></div>
+                <div class="nav-tag" style="left:70%" id="tag6"><a href="./2004Athens.html" onmouseover="select('s6')" onmouseleave="clear()">04</a></div>
+                <div class="nav-tag" style="left:84%" id="tag7"><a href="./2000Sydney.html" onmouseover="select('s7')" onmouseleave="clear()">00</a></div>
                 <div class="nav-intro">
                     <section id="s1" class="section-holder">
-                        Hello?
+                        <div class="inner-holder">
+                            <div class="cover" style="background-image: url(../../images/Olympic-Cities/2024Paris.jpg);"></div>
+                            <div class="intro">
+                                <h2 style="color: blue;"> Paris </h2>
+                                <h2 style="color: #fff;"> Olympics </h2>
+                                <h2 style="color: red;"> 2024 </h2>
+                                <p>
+                                    shfhjfhadjfajhs
+                                </p>
+                            </div>
+                        </div>
                     </section>
-                    <section id="s2" class="section-holder"></section>
-                    <section id="s3" class="section-holder"></section>
-                    <section id="s4" class="section-holder"></section>
-                    <section id="s5" class="section-holder"></section>
-                    <section id="s6" class="section-holder"></section>
-                    <section id="s7" class="section-holder"></section>
+                    <section id="s2" class="section-holder">
+                        <div class="inner-holder">
+                            <div class="cover" style="background-image: url(../../images/Olympic-Cities/2020Tokyo.jpg);"></div>
+                            <div class="intro">
+                                <h2 style="color: #fff;"> Tokyo </h2>
+                                <h2 style="color: red;"> Olympics </h2>
+                                <h2 style="color: #fff;"> 2020 </h2>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="s3" class="section-holder">
+                        <div class="inner-holder">
+                            <div class="cover" style="background-image: url(../../images/Olympic-Cities/2016Rio.jpg);"></div>
+                            <div class="intro">
+                                <h2 style="color: green;"> Rio </h2>
+                                <h2 style="color: rgb(20, 32, 70);"> Olympics </h2>
+                                <h2 style="color: #ffee2e;"> 2016 </h2>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="s4" class="section-holder">
+                        <div class="inner-holder">
+                            <div class="cover" style="background-image: url(../../images/Olympic-Cities/2012London.jpg);"></div>
+                            <div class="intro">
+                                <h2 style="color: blue;"> London </h2>
+                                <h2 style="color: red;"> Olympics </h2>
+                                <h2 style="color: white;"> 2012 </h2>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="s5" class="section-holder">
+                        <div class="inner-holder">
+                            <div class="cover" style="background-image: url(../../images/Olympic-Cities/2008Beijing.jpg);"></div>
+                            <div class="intro">
+                                <h2 style="color: rgb(255, 0, 0);"> Beijing </h2>
+                                <h2 style="color: rgb(255, 230, 0);"> Olympics </h2>
+                                <h2 style="color: rgb(255, 0, 0);"> 2008 </h2>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="s6" class="section-holder">
+                        <div class="inner-holder">
+                            <div class="cover" style="background-image: url(../../images/Olympic-Cities/2004Athens.jpg);"></div>
+                            <div class="intro">
+                                <h2 style="color: skyblue"> Athens </h2>
+                                <h2 style="color: rgb(255, 255, 255);"> Olympics </h2>
+                                <h2 style="color: rgb(0, 81, 255);"> 2004 </h2>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="s7" class="section-holder">
+                        <div class="inner-holder">
+                            <div class="cover" style="background-image: url(../../images/Olympic-Cities/2000Sydney.jpg);"></div>
+                            <div class="intro">
+                                <h2 style="color: rgb(0, 7, 131)"> Sydney </h2>
+                                <h2 style="color: rgb(255, 255, 255);"> Olympics </h2>
+                                <h2 style="color: rgb(255, 0, 0);"> 2000 </h2>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
