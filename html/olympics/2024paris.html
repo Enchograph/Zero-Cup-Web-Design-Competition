@@ -44,22 +44,24 @@
             display: inline-block;
             margin-right: 1%;
             width: 10%;
-            height:200px;
+            height:400px;
             border-radius: 5px;
         }
         .timelist section .left-box .line{
             width: 3px;
-            height: 100%;
+            height:100%;
             background-color: rgb(255, 255, 255);
             margin: auto;
             box-shadow: 0px 0px 25px 0px rgb(255, 255, 255);
         }
         .timelist section .right-box{
-            display: inline-block;
+            float: inline-end;
             width: 84%;
-            height:200px;
+            height:300px;
             border-radius: 5px;
             transition: all 0.5s ease-in-out;
+            font-family: Exo;
+            color: #e0e0e0;
         }
         .timelist section .right-box:hover{
             transform: scale(1.02);
@@ -69,6 +71,92 @@
             width: 10%;
             height:30px;
             border-radius: 5px;
+        }
+        .timelist section .right-box .intro{
+            width: 95%;
+            margin: 2.5% 2.5% 2.5% 2.5%;
+            height:fit-content;
+        }
+        .timelist section .right-box .intro .medal-title{
+            width: 100%;
+            height:70px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background: linear-gradient(0deg,#00E3AE 0%,#0066ff 100%);;
+            line-height: 70px;
+            font-size: 50px;
+            font-weight: 900;
+            color:#fff;
+            text-align: left;
+            font-family: Exo;
+        }
+        .timelist section .right-box .intro .medal-title h2{
+            width: 10%;
+            float: right;
+            margin-right: 5%;
+            text-align: right;
+            font-family: Exo;
+            color: #fff;
+            font-weight: 500;
+            line-height: 70px;
+            font-size: 30px;
+        }
+        .timelist section .right-box .intro .medal-content{
+            background-color: #00E3AE;
+            width: 100%;
+            height:300px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-family: Exo;
+        }
+        .timelist section .right-box .intro .medal-content .line-box{
+            margin-left: 3%;
+            margin-right: 3%;
+            width: 94%;
+            height: 38px;
+            margin-bottom: 5px;
+            line-height: 38px;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+        .timelist section .right-box .intro .medal-content .line-box h4{
+            width: 10%;
+            float: right;
+            margin-right: 5%;
+            text-align: right;
+            font-family: Exo;
+            color: #666666;
+            font-weight: 500;
+            line-height: 38px;
+            font-size: 15px;
+        }
+        .timelist section .right-box .intro .medal-content .line-box h3{
+            width: 10%;
+            float: left;
+            font-family: Exo;
+            color: #000000;
+            font-weight: 500;
+            line-height: 38px;
+            font-size: 18px;
+        }
+        .timelist section .right-box .intro .medal-content .line-box img{
+            float: left;
+            margin: 5px 5px 5px 5px;
+            color: #666666;
+            border: #000000 0.4px solid;
+        }
+        .timelist section .right-box .intro p{
+            text-align: justify;
+            text-justify: inter-ideograph;
+            text-indent: 2em;
+            font-family: Yahei;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 13;
+            line-clamp: 13;
+            -webkit-box-orient: vertical;
+            line-height: 40px;
+
         }
         .timelist section .title-right-box{
             display: inline-block;
@@ -100,7 +188,6 @@
             background-color: rgb(0, 0, 0);
             box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
             margin: auto;
-            text-align: center;
             transition: all 0.5s ease-in-out;
         }
         .timelist section .title-left-box .left-sign:hover{
@@ -136,7 +223,15 @@
                 <div class="left-box">
                     <div class="line"></div>
                 </div>
-                <div class="right-box"></div>
+                <div class="right-box">
+                    <div class="intro">
+                        <p>
+                            2024年夏季奥林匹克运动会是2024年7月26日至8月11日在法国首都巴黎举办的夏季综合运动会。本届奥林匹克运动会中，危地马拉[1]、圣卢西亚[2]、多米尼克和博茨瓦纳首次夺得奥林匹克运动会金牌[3]，圣卢西亚、多米尼克、佛得角[4]、阿尔巴尼亚以及难民代表团首次赢得奥运奖牌。[5]
+最终，美国代表团以40枚金牌、126枚奖牌，坐拥奖牌榜首位；中国代表团以40枚金牌、91枚奖牌排名第二；东道主法国代表团则拿下16枚金牌、64枚奖牌位列第五[6]。
+本届夏季奥林匹克运动会也是现代夏季奥运会历史以来首次，同时也是整个现代奥运会历史以来第二次有多于一个国家（美国和中国）的代表团获得同样最多数量的金牌[7]。在个人参赛的选手中，中国游泳运动员张雨霏获得最多奖牌（一枚银牌、五枚铜牌），法国游泳运动员莱昂·马尔尚获得最多的金牌（共四枚）[8]。
+                        </p>
+                    </div>
+                </div>
             </section>
             <section  id="tag2">
                 <div class="title-left-box">
@@ -148,7 +243,36 @@
                 <div class="left-box">
                     <div class="line"></div>
                 </div>
-                <div class="right-box"></div>
+                <div class="right-box">
+                    <div class="intro">
+                        <div class="medal-title">
+                            🥇 <h2>All</h2><h2>3th</h2><h2>2th</h2><h2>1th</h2>
+                        </div>
+                        <div class="medal-content">
+                            <div class="line-box">
+                                <h3>1</h3><img src="../../images/w160/us.png" width="40"><h4>126</h4><h4>42</h4><h4>44</h4><h4 style="color: black;font-weight: 900;">40</h4>
+                            </div>
+                            <div class="line-box">
+                                <h3>2</h3><img src="../../images/w160/cn.png" width="40"><h4>91</h4><h4>24</h4><h4>27</h4><h4 style="color: black;font-weight: 900;">40</h4>
+                            </div>
+                            <div class="line-box">
+                                <h3>3</h3><img src="../../images/w160/jp.png" width="40"><h4>45</h4><h4>13</h4><h4>12</h4><h4 style="color: black;font-weight: 900;">20</h4>
+                            </div>
+                            <div class="line-box">
+                                <h3>4</h3><img src="../../images/w160/au.png" width="40"><h4>53</h4><h4>16</h4><h4>19</h4><h4 style="color: black;font-weight: 900;">18</h4>
+                            </div>
+                            <div class="line-box">
+                                <h3>5</h3><img src="../../images/w160/fr.png" width="40"><h4>64</h4><h4>22</h4><h4>26</h4><h4 style="color: black;font-weight: 900;">16</h4>
+                            </div>
+                            <div class="line-box">
+                                <h3>6</h3><img src="../../images/w160/nl.png" width="40"><h4>34</h4><h4>12</h4><h4>7</h4><h4 style="color: black;font-weight: 900;">15</h4>
+                            </div>
+                            <div class="line-box">
+                                <h3>7</h3><img src="../../images/w160/gb.png" width="40"><h4>65</h4><h4>29</h4><h4>22</h4><h4 style="color: black;font-weight: 900;">14</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section  id="tag3">
                 <div class="title-left-box">
@@ -160,7 +284,11 @@
                 <div class="left-box">
                     <div class="line"></div>
                 </div>
-                <div class="right-box"></div>
+                <div class="right-box">
+                    <div class="intro">
+                        <p>该届奥运会其中的马拉松项目将开放给公众参与，为首届现代奥运会1896年举办超过百年以来，首次有比赛项目开放予公众参与[6]；该届奥运会的开幕式将会移至长达6公里的塞纳河河道及沿河举行，并计划将近河边最近的区域将划为售票区，外围区域将免费向观众开放。沿河两岸还将树立超过80块巨型屏幕，供现场观众实时欣赏，成为史上首次将奥运开幕式由体育场馆移师到开放区域举行；亦同时继2009年香港东亚运动会、2010年新加坡青奥会、2010年广州亚洲运动会和2018年布宜诺斯艾利斯青奥会后第五个在开放区域举行开幕式的综合运动会。</p>
+                    </div>
+                </div>
             </section>
             <section  id="tag4">
                 <div class="title-left-box">

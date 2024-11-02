@@ -11,6 +11,10 @@
     font-family: Exo;
     src: url(../Fonts/Exo-Medium.ttf);
 }
+@font-face {
+    font-family: Yahei;
+    src: url(../Fonts/微软雅黑.ttf);
+}
 body {
 
     background-color: #000000;
