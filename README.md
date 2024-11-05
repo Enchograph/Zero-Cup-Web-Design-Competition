@@ -19,4 +19,7 @@
 - 标题栏改进 增加三级界面入口
 <img src="./OriginalResources/readme/顶栏.png" width="50%">
 - 在主页的前两个section末加“详细内容”按钮，按钮样式已在styles.css .btn类中提供
--Olympic子页面<br>
+<br>页面美化
+<br>小游戏
+<br>响应式设计
+<br>亮色/暗色模式
