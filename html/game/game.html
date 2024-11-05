@@ -2,24 +2,24 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="GBK">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>零杯网页设计大赛作品</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <title>�㱭��ҳ��ƴ�����Ʒ</title>
+    <link rel="stylesheet" href="game.css">
 </head>
 
 <body>
     <header>
-        <!-- <h1>陈宏宇初稿</h1> -->
+        <!-- <h1>�º������</h1> -->
         <a href="../../index.html">
             <img src="../../images/Logo.png" alt="">
         </a>
         <nav>
             <ul>
-                <li><a href="../../index.html" class="smooth-text">首页</a></li>
-                <li><a href="../olympics/olympics.html" class="smooth-text">奥运会上的奥运健儿</a></li>
-                <li><a href="../sports/sports.html" class="smooth-text">运动场中的运动健儿</a></li>
-                <li><a href="./game.html" class="smooth-text" style="color: #fae596;">小游戏里的运动健儿</a></li>
+                <li><a href="../../index.html" class="smooth-text">��ҳ</a></li>
+                <li><a href="../olympics/olympics.html" class="smooth-text">���˻��ϵİ��˽���</a></li>
+                <li><a href="../sports/sports.html" class="smooth-text">�˶����е��˶�����</a></li>
+                <li><a href="./game.html" class="smooth-text" style="color: #fae596;">С��Ϸ����˶�����</a></li>
             </ul>
         </nav>
     </header>
@@ -27,52 +27,36 @@
 
     <main>
         <br><br><br><br><br><br>
-        <section class="olym">
-            <h1>Gallery Of Olympics</h1>
-            <div class="gallery">
-                <div class="gallery-wrap">
-                    <div class="item item-1"></div>
-                    <div class="item item-2"></div>
-                    <div class="item item-3"></div>
-                    <div class="item item-4"></div>
-                    <div class="item item-5"></div>
-                    <div class="item item-6"></div>
-                    <div class="item item-7"></div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="spr">
-
-            <div>
-                <h1>Famous Athletes & Sports</h1>
-                <div class="sports"><img class="image1" src="images/sports/1 篮球.png"></div>
-                <div class="sports"> <img class="image2" src="images/sports/2 跳高.png"></div>
-                <div class="sports"> <img class="image3" src="images/sports/3 羽毛球.png"></div>
-                <div class="sports"> <img class="image4" src="images/sports/4 排球.png"></div>
-                <div class="sports"> <img class="image5" src="images/sports/5 田径.png"></div>
-                <div class="sports"> <img class="image6" src="images/sports/6 乒乓.png"></div>
-            </div>
-            <span> </span>
-        </section>
-
         <section class="game">
             <div>
 
-                <h1>An Intersting Olympic Game</h1>
-                <span> </span>
-                <a href="#" class="btn btn--stripe btn--radius">这里填游戏的名字</a>
-                <span> </span>
+                <h1>С��Ϸ����˶�����</h1>
+                <p>
+                    ���������Ϸ˵���İ�
+                    ��Ϸ��ľ�̬ͼ֮���ĳɶ�����
+                </p>
+                <div class="container1">
+                    <dic class="child-container container1score">
+                        <div id="score">Score: 0</div>
+                        <div id="highestScore">Highest Score: 0</div>
+                    </dic>
+                    <div class="child-container container1canvas">
+                        <canvas id="gameCanvas" width="800" height="100"></canvas>
+                    </div>
+                    <div class="child-container container1button">
+                        <button class="restartButton" id="restartButton" style="display: none;">Next Round</button>
+
+                    </div>
+                </div>
             </div>
         </section>
-
     </main>
     <footer>
         <br><br><br>
-        <p>“零杯”网页设计大赛零组参赛作品</p>
+        <p>���㱭����ҳ��ƴ������������Ʒ</p>
         <br><br><br>
     </footer>
+    <script src="game.js"></script>
 </body>
 
 </html>

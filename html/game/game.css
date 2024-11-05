@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url(../../fonts/trajan-pro-cufonfonts/TrajanPro-Regular.ttf), url(../../fonts/HanYiZhongSongJian-1.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Exo;
+    src: url(../../fonts/Exo-Medium.ttf);
+}
+@font-face {
+    font-family: TraBold;
+    src: url(../../fonts/trajan-pro-cufonfonts/TrajanPro-Bold.otf);
+}
+
+@font-face {
+    font-family: Yahei;
+    src: url(../../fonts/微软雅黑.ttf);
+}
+
+body {
+
+    background-color: #000000;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    margin-top: 8px;
+    font-family: iconfont, serif;
+}
+
+header {
+    background-color: rgba(35, 28, 26, 0.8);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    font-family: iconfont, serif;
+    font-size: 1.5em;
+    z-index: 9999;
+}
+
+header h1 {
+    color: #fff6e6;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    line-height: 80px;
+    background-image: url(../images/Logo.png);
+    background-size: 100%, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -9999px;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+header a img {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    line-height: 40px;
+    width: 250px;
+    text-indent: -9999px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+header a:hover {
+    color: #96ABFA;
+    text-decoration: none;
+}
+
+h1 {
+
+    margin-top: auto, auto;
+    line-height: 4em;
+    font-family: iconfont, serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #fff6e6;
+}
+
+p {
+
+    margin-top: auto, auto;
+    font-family: iconfont, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff6e6;
+}
+
+span::before {
+    content: '';
+    display: inline-block;
+    height: 700px;
+    width: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    background-color: #FCF6E5;
+    margin: 0 auto;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+#highestScore {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.container1 {
+    width: 80%;
+    height: 800px;
+    position: relative;
+    margin:0 auto;
+    /* 相对定位以便子容器绝对定位 */
+    background-image: url("./resources/gameBackground.jpg");
+    background-position: 50%, 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.child-container {
+    width: 800px;
+    /* 子容器的宽度 */
+    height: 100px;
+    /* 默认高度，后续会调整 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* 绝对定位 */
+    left: 50%;
+    /* 水平居中 */
+    transform: translateX(-50%);
+    /* 使容器居中 */
+}
+
+.container1score {
+    top: 250px;
+    /* 距容器顶部200px */
+    height: 100px;
+    /* 高度100px */
+}
+
+.container1canvas {
+    top: 50px;
+    top: 310px;
+    /* 距容器顶部310px（第一个子容器的底部+10px） */
+    height: 100px;
+    /* 高度100px */
+}
+
+.container1button {
+    top: 420px;
+    /* 距容器顶部420px（第二个子容器的底部+10px） */
+    height: 200px;
+    /* 高度200px */
+}
+
+.restartButton {
+    background-color: #B69968;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: TraBold, serif;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.restartButton:hover {
+    background-color: #FFF9E8;
+    color: #b8860b;
+    border: 1px solid #ccc;
+}
