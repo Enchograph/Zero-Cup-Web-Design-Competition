@@ -124,7 +124,10 @@ footer {
     font: inherit;
     line-height: normal;
     cursor: pointer;
-    -moz-user-select: text;
+    -moz-user-select: text; /* Firefox */
+    -webkit-user-select: text; /* Safari and Chrome */
+    -ms-user-select: text; /* Internet Explorer/Edge */
+    user-select: text; /* Standard property */
     display: block;
     text-decoration: none;
     text-transform: uppercase;
