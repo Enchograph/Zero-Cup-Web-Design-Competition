@@ -452,6 +452,7 @@ footer {
     height: 282px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;;
+    background-size: 100%;
 }
 .timelist section .right-box .intro .athlete-box .name{
     width: 200px;
@@ -459,6 +460,16 @@ footer {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;;
     background-color: #fae596;
+}
+.timelist section .right-box .intro .athlete-box .name a{
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s ease-in-out;
+}
+.timelist section .right-box .intro .athlete-box .name a:hover{
+    color:dodgerblue;
 }
 @media(max-width:1550px){
     .timelist section .right-box .intro #a4{
