@@ -465,7 +465,7 @@ footer {
     line-height: 40px;
     font-size: 20px;
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     transition: color 0.5s ease-in-out;
 }
 .timelist section .right-box .intro .athlete-box .name a:hover{
