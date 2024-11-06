@@ -4,6 +4,10 @@ const ctx = canvas.getContext('2d');
 // 初始化音乐
 const bgMusic = new Audio('./resources/background.mp3');
 bgMusic.loop = true;
+// 初始化音效
+const successSound = new Audio('./resources/successSound.mp3');
+const missSound = new Audio('./resources/missSound.mp3');
+const failSound = new Audio('./resources/failSound.mp3');
 
 // 游戏参数
 let score = 0;
@@ -30,11 +34,18 @@ class Shuttlecock {
         this.width = 100;
         this.height = 100;
         this.type = type;
+        this.speed = this.calculateSpeed();  // 初始速度根据分数计算
+    }
+
+    // 随分数动态调整羽毛球的速度
+    calculateSpeed() {
+        return 5 + Math.floor(score / 500);  // 基础速度为5，每100分增加1的速度
     }
 
     update() {
+        this.speed = this.calculateSpeed();  // 每次更新重新计算速度
         if (this.x + this.width > 0) {
-            this.x -= 10;
+            this.x -= this.speed;
         } else {
             game.shuttlecocks = game.shuttlecocks.filter(sc => sc !== this);
         }
@@ -97,6 +108,7 @@ function initGame() {
     drawPlayer();
     updateScoreDisplay();
     document.getElementById('beginButton').style.display = 'block';
+    
 }
 
 // 游戏开始
@@ -105,15 +117,33 @@ function startGame() {
     score = 0;
     gameOver = false;
     bgMusic.play();
-    shuttlecockInterval = setInterval(generateShuttlecock, 2000);
     document.getElementById('beginButton').style.display = 'none';
+    generateShuttlecock();  // 立即开始生成羽毛球
     gameLoop();
+}
+
+// 生成羽毛球，添加随机间隔
+function generateShuttlecock() {
+    if (gameOver) return;
+    const type = Math.random() > 0.5 ? 'A' : 'B';
+    game.shuttlecocks.push(new Shuttlecock(type));
+
+    // 随机生成下一次羽毛球的生成间隔时间（500到1000毫秒之间）
+    const randomInterval = Math.floor(Math.random() * 500) + 700;
+    setTimeout(generateShuttlecock, randomInterval);
 }
 
 // 结束游戏
 function endGame() {
     clearInterval(shuttlecockInterval);
     document.removeEventListener('keydown', handleKeyDown);
+    document.getElementById('restartButton').style.display = 'block';
+    clearInterval(shuttlecockInterval);
+    document.removeEventListener('keydown', handleKeyDown);
+
+    // 在游戏结束时更新最高分
+    updateHighestScore();
+
     document.getElementById('restartButton').style.display = 'block';
 }
 
@@ -143,7 +173,18 @@ function handleCollision(shuttlecock) {
             player.successImage = null;
             player.state = 'stand';
         }, 500);
+
+        // 播放击球成功音效
+        playSound(successSound);
     } else {
+        if (player.state === 'defenseA' || player.state === 'defenseB') {
+            // 播放击球打空音效
+            playSound(missSound);
+        } else {
+            // 播放击球失败音效
+            playSound(failSound);
+        }
+
         gameOver = true;
         player.state = 'fail';
         bgMusic.pause();
@@ -153,11 +194,10 @@ function handleCollision(shuttlecock) {
     }
 }
 
-// 生成羽毛球
-function generateShuttlecock() {
-    if (gameOver) return;
-    const type = Math.random() > 0.5 ? 'A' : 'B';
-    game.shuttlecocks.push(new Shuttlecock(type));
+// 播放音效的函数
+function playSound(sound) {
+    sound.currentTime = 0;
+    sound.play();
 }
 
 // 更新分数显示
