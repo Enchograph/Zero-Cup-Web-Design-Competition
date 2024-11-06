@@ -25,6 +25,95 @@ main {
     text-align: center;
     margin-top: 8px;
 }
+#top-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#top-bar li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+/* 二级菜单初始状态 */
+#top-bar li ul {
+    position: absolute; 
+    background: rgba(35, 28, 26, 0.8);
+    top: 100%;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    /* 初始最大高度为 0 */
+    transition: max-height 0.5s ease;
+    /* 使用 max-height 实现展开动画 */
+}
+
+/* 悬浮时显示二级菜单并缓缓展开 */
+#top-bar li:hover ul {
+    max-height: 300px;
+    /* 设置一个足够大的最大高度，以容纳所有内容 */
+    padding: 5px 0;
+    /* 设置显示时的内边距 */
+}
+
+#top-bar li a {
+    display: inline-block;
+    /* 让链接根据内容宽度自动调整 */
+    padding: 0 20px;
+    /* 给左右适当的内边距 */
+    text-decoration: none;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+    color: #fff;
+}
+
+#top-bar li a:hover {
+    color: #fae596;
+}
+#top-bar li ul li{
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+/* 调整二级菜单项的字体大小 */
+#top-bar li ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-bar li ul li a {
+    text-align: center;
+    padding: 0 20px;
+}
+#top-bar li ul li a {
+    font-size: 16px;
+    /* 调整字体大小 */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin:0 auto;
+    /* 设置内边距，使其与一级菜单的悬浮边框一致 */
+    transition: background-color 0.3s ease, border 0.3s ease;
+    display: inline-block;
+    /* 使二级菜单项自适应文字宽度 */
+    color: #fff;
+}
+
+/* 二级菜单项悬浮时的效果 */
+#top-bar li ul li a:hover {
+
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fae596;
+    }
+
+#top-bar li ul li a:hover ~ #top-bar li a {
+    color: #fae596;
+}
 
 header {
     background-color: rgba(35, 28, 26, 0.8);
@@ -81,6 +170,25 @@ header a:hover {
     color: #96ABFA;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h1 {
 
@@ -193,7 +301,6 @@ footer {
     margin: 0 10%;
     width: 1800px;
     text-align: center;
-
 }
 
 .gallery-wrap {

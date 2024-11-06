@@ -12,6 +12,7 @@
     font-family: Exo;
     src: url(../../fonts/Exo-Medium.ttf);
 }
+
 @font-face {
     font-family: TraBold;
     src: url(../../fonts/trajan-pro-cufonfonts/TrajanPro-Bold.otf);
@@ -23,7 +24,6 @@
 }
 
 body {
-
     background-color: #000000;
     overflow-x: hidden;
     margin: 0;
@@ -92,7 +92,6 @@ header a:hover {
 }
 
 h1 {
-
     margin-top: auto, auto;
     line-height: 4em;
     font-family: iconfont, serif;
@@ -102,7 +101,6 @@ h1 {
 }
 
 p {
-
     margin-top: auto, auto;
     font-family: iconfont, serif;
     font-size: 20px;
@@ -147,8 +145,7 @@ canvas {
     width: 80%;
     height: 800px;
     position: relative;
-    margin:0 auto;
-    /* 相对定位以便子容器绝对定位 */
+    margin: 0 auto;
     background-image: url("./resources/gameBackground.jpg");
     background-position: 50%, 50%;
     background-size: 100%;
@@ -158,43 +155,32 @@ canvas {
 
 .child-container {
     width: 800px;
-    /* 子容器的宽度 */
     height: 100px;
-    /* 默认高度，后续会调整 */
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    /* 绝对定位 */
     left: 50%;
-    /* 水平居中 */
     transform: translateX(-50%);
-    /* 使容器居中 */
 }
 
 .container1score {
     top: 250px;
-    /* 距容器顶部200px */
     height: 100px;
-    /* 高度100px */
 }
 
 .container1canvas {
-    top: 50px;
     top: 310px;
-    /* 距容器顶部310px（第一个子容器的底部+10px） */
     height: 100px;
-    /* 高度100px */
 }
 
 .container1button {
     top: 420px;
-    /* 距容器顶部420px（第二个子容器的底部+10px） */
     height: 200px;
-    /* 高度200px */
 }
 
-.restartButton {
+.restartButton,
+.beginButton {
     background-color: #B69968;
     border-radius: 12px;
     border: none;
@@ -206,12 +192,12 @@ canvas {
     font-size: 20px;
     font-family: TraBold, serif;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
-.restartButton:hover {
+.restartButton:hover,
+.beginButton:hover {
     background-color: #FFF9E8;
     color: #b8860b;
     border: 1px solid #ccc;

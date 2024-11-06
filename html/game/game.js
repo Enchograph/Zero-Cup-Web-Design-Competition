@@ -9,6 +9,7 @@ bgMusic.loop = true;
 let score = 0;
 let highestScore = localStorage.getItem('highestScore') || 0;
 let gameOver = false;
+let gameStarted = false;
 
 // 角色初始化
 const player = {
@@ -91,30 +92,41 @@ function drawPlayer() {
 
 let shuttlecockInterval;
 
-// 游戏初始化
+// 游戏初始化（页面加载时显示角色与计分）
+function initGame() {
+    drawPlayer();
+    updateScoreDisplay();
+    document.getElementById('beginButton').style.display = 'block';
+}
+
+// 游戏开始
 function startGame() {
+    gameStarted = true;
+    score = 0;
+    gameOver = false;
     bgMusic.play();
     shuttlecockInterval = setInterval(generateShuttlecock, 2000);
+    document.getElementById('beginButton').style.display = 'none';
     gameLoop();
 }
 
 // 结束游戏
 function endGame() {
     clearInterval(shuttlecockInterval);
-    // 移除事件监听器
     document.removeEventListener('keydown', handleKeyDown);
-    // 显示重新开始按钮
     document.getElementById('restartButton').style.display = 'block';
 }
 
 // 处理键盘按下事件
 function handleKeyDown(e) {
-    if (e.key === 'w') {
-        player.state = 'defenseA';
-        setTimeout(() => player.state = 'stand', 500);
-    } else if (e.key === 's') {
-        player.state = 'defenseB';
-        setTimeout(() => player.state = 'stand', 500);
+    if (gameStarted && !gameOver) {
+        if (e.key === 'w') {
+            player.state = 'defenseA';
+            setTimeout(() => player.state = 'stand', 500);
+        } else if (e.key === 's') {
+            player.state = 'defenseB';
+            setTimeout(() => player.state = 'stand', 500);
+        }
     }
 }
 
@@ -135,7 +147,7 @@ function handleCollision(shuttlecock) {
         gameOver = true;
         player.state = 'fail';
         bgMusic.pause();
-        game.shuttlecocks = []; // 清空所有羽毛球
+        game.shuttlecocks = [];
         endGame();
         console.log("游戏结束，准备结束或重启");
     }
@@ -143,7 +155,7 @@ function handleCollision(shuttlecock) {
 
 // 生成羽毛球
 function generateShuttlecock() {
-    if (gameOver) return; // 游戏结束时停止生成
+    if (gameOver) return;
     const type = Math.random() > 0.5 ? 'A' : 'B';
     game.shuttlecocks.push(new Shuttlecock(type));
 }
@@ -159,12 +171,10 @@ function gameLoop() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     game.timer++;
 
-    // 增加分数
     if (!gameOver && game.timer % 10 === 0) {
         score++;
     }
 
-    // 更新和绘制羽毛球
     game.shuttlecocks.forEach(shuttlecock => {
         shuttlecock.update();
         shuttlecock.draw();
@@ -173,42 +183,37 @@ function gameLoop() {
         }
     });
 
-    // 绘制角色
     drawPlayer();
-
-    // 更新分数显示
     updateScoreDisplay();
 
-    // 检查游戏是否结束
     if (gameOver) {
         ctx.fillStyle = '#b8860b';
         ctx.font = '25px Trajan Pro';
         ctx.fillText('Game Over', canvas.width / 2 - 75, canvas.height / 2 + 30);
+    } else {
+        requestAnimationFrame(gameLoop);
     }
-
-    requestAnimationFrame(gameLoop);
 }
 
 // 处理重新开始按钮点击
 document.getElementById('restartButton').addEventListener('click', () => {
-    // 重置游戏状态
     score = 0;
     gameOver = false;
     game.shuttlecocks = [];
     player.state = 'stand';
     player.successImage = null;
-    bgMusic.currentTime = 0; // 重置音乐
-    bgMusic.play(); // 重新播放音乐
-    document.getElementById('restartButton').style.display = 'none'; // 隐藏按钮
-
-    // 重新添加事件监听器
+    bgMusic.currentTime = 0;
+    bgMusic.play();
+    document.getElementById('restartButton').style.display = 'none';
     document.addEventListener('keydown', handleKeyDown);
-
-    startGame(); // 重新开始游戏
+    startGame();
 });
+
+// 处理开始按钮点击
+document.getElementById('beginButton').addEventListener('click', startGame);
 
 // 添加事件监听器
 document.addEventListener('keydown', handleKeyDown);
 
-// 启动游戏
-startGame();
+// 启动初始化
+initGame();
