@@ -173,26 +173,9 @@ header a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 h1 {
 
-    margin-top: auto, auto;
+    margin-top: auto;
     line-height: 4em;
     font-family: iconfont, serif;
     font-size: 44px;
@@ -202,7 +185,7 @@ h1 {
 
 p {
 
-    margin-top: auto, auto;
+    margin-top: auto;
     font-family: iconfont, serif;
     font-size: 20px;
     text-transform: uppercase;
