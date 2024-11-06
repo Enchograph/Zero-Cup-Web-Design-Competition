@@ -7,14 +7,17 @@
     font-family: iconfont;
     src: url(../Fonts/trajan-pro-cufonfonts/TrajanPro-Regular.ttf), url(../Fonts/HanYiZhongSongJian-1.ttf) format('truetype');
 }
-@font-face{
+
+@font-face {
     font-family: Exo;
     src: url(../Fonts/Exo-Medium.ttf);
 }
+
 @font-face {
     font-family: Yahei;
     src: url(../Fonts/微软雅黑.ttf);
 }
+
 body {
 
     background-color: #000000;
@@ -25,6 +28,7 @@ main {
     text-align: center;
     margin-top: 8px;
 }
+
 #top-bar ul {
     list-style: none;
     padding: 0;
@@ -40,7 +44,7 @@ main {
 
 /* 二级菜单初始状态 */
 #top-bar li ul {
-    position: absolute; 
+    position: absolute;
     background: rgba(35, 28, 26, 0.8);
     top: 100%;
     width: 100%;
@@ -74,11 +78,13 @@ main {
 #top-bar li a:hover {
     color: #fae596;
 }
-#top-bar li ul li{
+
+#top-bar li ul li {
     line-height: 40px;
     width: 100%;
     text-align: center;
 }
+
 /* 调整二级菜单项的字体大小 */
 #top-bar li ul li {
     display: flex;
@@ -90,13 +96,14 @@ main {
     text-align: center;
     padding: 0 20px;
 }
+
 #top-bar li ul li a {
     font-size: 16px;
     /* 调整字体大小 */
     width: 100%;
     height: 100%;
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
     /* 设置内边距，使其与一级菜单的悬浮边框一致 */
     transition: background-color 0.3s ease, border 0.3s ease;
     display: inline-block;
@@ -109,9 +116,9 @@ main {
 
     background-color: rgba(255, 255, 255, 0.2);
     color: #fae596;
-    }
+}
 
-#top-bar li ul li a:hover ~ #top-bar li a {
+#top-bar li ul li a:hover~#top-bar li a {
     color: #fae596;
 }
 
@@ -215,10 +222,14 @@ footer {
     font: inherit;
     line-height: normal;
     cursor: pointer;
-    -moz-user-select: text; /* Firefox */
-    -webkit-user-select: text; /* Safari and Chrome */
-    -ms-user-select: text; /* Internet Explorer/Edge */
-    user-select: text; /* Standard property */
+    -moz-user-select: text;
+    /* Firefox */
+    -webkit-user-select: text;
+    /* Safari and Chrome */
+    -ms-user-select: text;
+    /* Internet Explorer/Edge */
+    user-select: text;
+    /* Standard property */
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -369,6 +380,7 @@ footer {
     text-transform: uppercase;
     color: #fff6e6;
 }
+
 .sports:hover,
 .sports:focus,
 .sports:active {
@@ -438,4 +450,3 @@ footer {
 .game {
     text-align: center;
 }
-
