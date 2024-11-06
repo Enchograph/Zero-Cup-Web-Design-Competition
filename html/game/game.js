@@ -108,7 +108,6 @@ function initGame() {
     drawPlayer();
     updateScoreDisplay();
     document.getElementById('beginButton').style.display = 'block';
-    
 }
 
 // сно╥©╙й╪
