@@ -202,7 +202,7 @@ p {
 span::before {
     content: '';
     display: inline-block;
-    height: 700px;
+    height: 350px;
     width: 0;
 }
 
@@ -351,100 +351,66 @@ footer {
 
 
 /*!sportsinside*/
-.spr {
-    display: inline-block;
-    width: 1800px;
-    height: 100px;
-    margin: 10px 10%;
-}
-
-.sports {
+/* 容器样式 */
+.containerSpr {
+    width: 1250px;
+    height: 540px;
+    margin: 0 auto;
     position: relative;
-    transform-style: preserve-3d;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-
+    display: flex;
 }
 
-.sports h1 {
-    line-height: 4em;
-    font-family: iconfont, serif;
-    font-size: 44px;
-    text-transform: uppercase;
-    color: #fff6e6;
-}
-
-.sports:hover,
-.sports:focus,
-.sports:active {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-    z-index: 10;
-    cursor: pointer;
-    flex: 7;
-}
-
-.image1 {
+/* 重叠的图片样式 */
+.containerSpr img {
     position: absolute;
-    width: 80%;
-    height: auto;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    transition: z-index 0s ease;
+}
+
+/* 初始 z-index 设置 */
+.containerSpr img:nth-of-type(1) {
     z-index: 1;
 }
 
-.image2 {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    top: 0;
-    left: 1.5%;
+.containerSpr img:nth-of-type(2) {
     z-index: 2;
 }
 
-.image3 {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    top: 0;
-    left: 3%;
+.containerSpr img:nth-of-type(3) {
     z-index: 3;
 }
 
-.image4 {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    top: 0;
-    left: 4.5%;
+.containerSpr img:nth-of-type(4) {
     z-index: 4;
 }
 
-.image5 {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    top: 0;
-    left: 6%;
+.containerSpr img:nth-of-type(5) {
     z-index: 5;
 }
 
-.image6 {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    top: 0;
-    left: 6.5%;
-    z-index: 6;
+/* 切分区域样式 */
+.slice {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    pointer-events: all;
+    cursor: pointer;
+    /* 鼠标悬停时显示为手型 */
 }
 
+/* 鼠标悬停效果，使对应图片浮到最上层 */
+.slice:nth-of-type(1):hover~img:nth-of-type(1),
+.slice:nth-of-type(2):hover~img:nth-of-type(2),
+.slice:nth-of-type(3):hover~img:nth-of-type(3),
+.slice:nth-of-type(4):hover~img:nth-of-type(4),
+.slice:nth-of-type(5):hover~img:nth-of-type(5) {
+    z-index: 6;
+}
 /*!game*/
 
 .game {
