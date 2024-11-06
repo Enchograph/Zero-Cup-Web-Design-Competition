@@ -12,17 +12,42 @@
 <body>
     <header>
         <!-- <h1>陈宏宇初稿</h1> -->
-        <a href="../../index.html">
-            <img src="../../images/Logo.png" alt="">
+        <a href="./index.html">
+            <img src="./images/Logo.png" alt="网站Logo">
         </a>
-        <nav>
-            <ul>
-                <li><a href="../../index.html" class="smooth-text">首页</li>
-                    <li><a href="./olympics.html" class="smooth-text" style="color: #fae596;">奥运会上的奥运健儿</a></li>
-                    <li><a href="../../html/sports/sports.html" class="smooth-text">运动场中的运动健儿</a></li>
-                    <li><a href="../../html/game/game.html" class="smooth-text">小游戏里的运动健儿</a></li>
-            </ul>
+        <nav aria-label="主导航">
+            <div id="top-bar">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li>
+                        <a href="#">奥运会上的运动健儿</a>
+                        <ul aria-label="奥运会列表">
+                            <li><a href="#">2000 Sydney</a></li>
+                            <li><a href="#">2004 Athens</a></li>
+                            <li><a href="#">2008 Beijing</a></li>
+                            <li><a href="#">2012 London</a></li>
+                            <li><a href="#">2016 Rio</a></li>
+                            <li><a href="#">2020 Tokyo</a></li>
+                            <li><a href="#">2024 Paris</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">运动场中的运动健儿</a>
+                        <ul aria-label="运动类表">
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="#">Badminton</a></li>
+                            <li><a href="#">Volleyball</a></li>
+                            <li><a href="#">Racing</a></li>
+                            <li><a href="#">Pingpong</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">小游戏里的运动健儿</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+    
     </header>
     <div class="headpage"  style="background-image: url(../../images/Olympic-Cities/2008Beijing.jpg);">
         <div class="headpage-cover">
