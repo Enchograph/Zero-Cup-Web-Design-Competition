@@ -60,7 +60,7 @@ main {
     /* 给左右适当的内边距 */
     text-decoration: none;
     transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
-    color: #fff;
+    color: #fff6e6;
 }
 
 #top-bar li a:hover {
@@ -96,7 +96,7 @@ main {
     transition: background-color 0.3s ease, border 0.3s ease;
     display: inline-block;
     /* 使二级菜单项自适应文字宽度 */
-    color: #fff;
+    color: #fff6e6;
 }
 
 /* 二级菜单项悬浮时的效果 */
@@ -155,7 +155,7 @@ header a img {
 }
 
 header a {
-    color: #fff;
+    color: #fff6e6;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -294,7 +294,7 @@ footer {
     top: 200px;
     left: 0;
     right: 0;
-    color: #fff;
+    color: #fff6e6;
     padding: 10px;
     border-radius: 10px;
     opacity: 0;

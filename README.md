@@ -25,6 +25,9 @@
 <br>亮色/暗色模式
 
 ##借物表
--奥运会官网：从2000年至2024年各届奥运会的图片、徽标及吉祥物。
+-奥运会官网：从2000年至2024年各届奥运会的实拍图及徽标。
 -pixabay.com：游戏音效
--
+-https://www.youtube.com/watch?v=Bp2ZpzqsvJk
+    游戏背景音乐。
+    版权所属：HoyoMix, AllEightBits@youtube
+    

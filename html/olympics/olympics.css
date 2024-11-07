@@ -12,7 +12,7 @@ body {
     background-color: #000000;
 }
 
-main {
+.main {
     text-align: center;
 }
 #top-bar ul {
@@ -58,7 +58,7 @@ main {
     /* 给左右适当的内边距 */
     text-decoration: none;
     transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
-    color: #fff;
+    color: #fff6e6;
 }
 
 #top-bar li a:hover {
@@ -94,7 +94,7 @@ main {
     transition: background-color 0.3s ease, border 0.3s ease;
     display: inline-block;
     /* 使二级菜单项自适应文字宽度 */
-    color: #fff;
+    color: #fff6e6;
 }
 
 /* 二级菜单项悬浮时的效果 */
@@ -115,6 +115,7 @@ header {
     font-family: iconfont, serif;
     font-size: 1.5em;
     z-index: 9999;
+    margin-top: 0;
 }
 
 header h1 {
@@ -153,7 +154,7 @@ header a img {
 }
 
 header a {
-    color: #fff;
+    color: #fff6e6;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -185,6 +186,13 @@ p {
 footer {
     text-align: center;
 }
+
+
+
+
+
+
+
 .nav-holder{
     width: 80%;
     height:max-content;
@@ -236,7 +244,7 @@ footer {
     left: 0px;
     height:0px;
     width: 100%;
-    /* background: linear-gradient(0deg,#FFFFFF 8.68%,#8D8D8D 48.19%,#000000 100%); */
+    /* background: linear-gradient(0deg,#fff6e6FFF 8.68%,#8D8D8D 48.19%,#000000 100%); */
     background-size: 100%;
     border-bottom-left-radius: 18px;
     transition: all 0.5s ease-in-out;
@@ -245,7 +253,7 @@ footer {
     height:940px;
 }
 .nav-holder .nav-intro section{
-    color:#fff;
+    color:#fff6e6;
     display: none;
 }
 .nav-holder .nav-intro .section-holder .inner-holder .cover{
@@ -322,7 +330,7 @@ footer {
 }
 .nav-holder .nav-intro .section-holder .inner-holder .button-style a{
     text-decoration: none;
-    color:#fff;
+    color:#fff6e6;
     transition: all 0.5s ease-in-out;
 }
 .nav-holder .nav-intro .section-holder .inner-holder .button-style a:hover{
@@ -410,7 +418,7 @@ footer {
     line-height: 70px;
     font-size: 50px;
     font-weight: 900;
-    color:#fff;
+    color:#fff6e6;
     text-align: left;
     font-family: Exo;
 }
@@ -420,7 +428,7 @@ footer {
     margin-right: 5%;
     text-align: right;
     font-family: Exo;
-    color: #fff;
+    color: #fff6e6;
     font-weight: 500;
     line-height: 70px;
     font-size: 30px;
@@ -440,7 +448,7 @@ footer {
     height: 38px;
     margin-bottom: 5px;
     line-height: 38px;
-    background-color: #fff;
+    background-color: #fff6e6;
     border-radius: 3px;
 }
 .timelist section .right-box .intro .medal-content .line-box h4{
@@ -495,7 +503,7 @@ footer {
     font-family: Exo;
     line-height: 28px;
     font-size: 28px;
-    color: #fff;
+    color: #fff6e6;
     transition: all 0.5s ease-in-out;
     border: 1px #fae596 solid;
 }
@@ -508,7 +516,7 @@ footer {
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
-    border-color: #fff;
+    border-color: #fff6e6;
     background-color: rgb(0, 0, 0);
     box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
     margin: auto;
@@ -542,7 +550,7 @@ footer {
     display: inline-block;
     margin: 5px 5px 5px 5px;
     border-radius: 5px;
-    border: 1px solid #fff;
+    border: 1px solid #fff6e6;
     transition: all 0.5s ease-in-out;
 }
 .timelist section .right-box .intro .athlete-box:hover{
@@ -600,5 +608,5 @@ footer {
     width: calc(100vw);
     height:calc(10vh);
     background: linear-gradient(0deg,#000000 0%,#ff000000 100%);
-    color:#fff
+    color:#fff6e6
 }

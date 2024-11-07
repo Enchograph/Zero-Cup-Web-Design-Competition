@@ -72,7 +72,7 @@ main {
     /* 给左右适当的内边距 */
     text-decoration: none;
     transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
-    color: #fff;
+    color: #fff6e6;
 }
 
 #top-bar li a:hover {
@@ -108,7 +108,7 @@ main {
     transition: background-color 0.3s ease, border 0.3s ease;
     display: inline-block;
     /* 使二级菜单项自适应文字宽度 */
-    color: #fff;
+    color: #fff6e6;
 }
 
 /* 二级菜单项悬浮时的效果 */
@@ -168,7 +168,7 @@ header a img {
 }
 
 header a {
-    color: #fff;
+    color: #fff6e6;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -213,13 +213,12 @@ footer {
 /*!gamebutton*/
 
 .btn {
-    font-family: sans-serif;
+    font-family: iconfont, serif;
     overflow: visible;
     margin: 0 40%;
     padding: 0;
     border: 0;
     background: transparent;
-    font: inherit;
     line-height: normal;
     cursor: pointer;
     -moz-user-select: text;
@@ -270,12 +269,12 @@ footer {
 .btn--stripe:hover {
     background-color: #FCF6E5;
     color: #000;
-    border-color: #fff;
+    border-color: #fff6e6;
 }
 
 .btn--stripe:hover:after {
     background-image: repeating-linear-gradient(45deg, #000, #000 1px, transparent 2px, transparent 5px);
-    border-top: 1px solid #fff;
+    border-top: 1px solid #fff6e6;
     animation: stripe-slide 12s infinite linear forwards;
 }
 
@@ -367,7 +366,8 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: z-index 0s ease;
+        transition: transform 0.7s ease, z-index 0s ease;
+            /* 仅对transform应用过渡效果 */
 }
 
 /* 初始 z-index 设置 */
@@ -409,8 +409,21 @@ footer {
 .slice:nth-of-type(3):hover~img:nth-of-type(3),
 .slice:nth-of-type(4):hover~img:nth-of-type(4),
 .slice:nth-of-type(5):hover~img:nth-of-type(5) {
-    z-index: 6;
-}
+        z-index: 6;
+            transform: scale(0.95);
+            /* 图片轻微缩小 */
+        }
+        
+        /* 可以设置鼠标悬停时的图片过渡效果 */
+        .containerSpr img:hover {
+            transform: scale(0.95);
+            /* 轻微缩小 */
+
+                transition: transform 0.7s ease;
+                    /* 设置 transform 的过渡效果 */
+        }
+
+
 /*!game*/
 
 .game {
