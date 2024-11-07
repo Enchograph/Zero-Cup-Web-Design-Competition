@@ -213,6 +213,7 @@ footer {
 /*!gamebutton*/
 
 .btn {
+    font-size: 20px;
     font-family: iconfont, serif;
     overflow: visible;
     margin: 0 40%;
