@@ -1,5 +1,15 @@
 @import url("../public/font.css");
 
+.name{
+    color:#000000;
+    font-size: 15px;
+    font-family: mainFontStyle, hanYiZhongSong ,Yahei;
+    line-height: 40px;
+    height: 40px;
+}
+
+
+
 .timelist {
     width: 80%;
     margin-left: 10%;
@@ -45,7 +55,6 @@
 }
 
 .timelist section .right-box:hover {
-    transform: scale(1.02);
 }
 
 .timelist section .title-left-box {
@@ -188,7 +197,6 @@
 }
 
 .timelist section .title-left-box .left-sign:hover {
-    transform: scale(1.3);
     width: 15px;
     height: 15px;
     border-width: 2.5px;

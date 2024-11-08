@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: hanYiZhongSong;
+    src: url(../../resources/public/fonts/HanYiZhongSongJian-1.ttf) format('truetype');
+}
+
+@font-face {
     font-family: Exo;
     src: url(../../resources/public/fonts/Exo-Medium.ttf);
 }
