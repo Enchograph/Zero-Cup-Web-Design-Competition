@@ -9,7 +9,7 @@
     column-gap: 20px;
 }
 
-/* 每一列图片包含层 */
+/*列*/
 .colu {
     margin-bottom: 10px;
     /* 防止多列布局，分页媒体和多区域上下文中的意外中断 */
@@ -30,13 +30,11 @@
     transition: all 0.3s ease;
 }
 
-/* 图片 */
 .AthletesImg {
     width: 100%;
     vertical-align: middle;
 }
 
-/* 图片下的信息包含层 */
 .AthletesInfo {
     padding: 5px 10px;
 }

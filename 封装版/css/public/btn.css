@@ -1,41 +1,22 @@
 @import url("../public/font.css");
 
 /*!gamebutton*/
-
 .btn {
     font-size: 20px;
     font-family: iconfont, serif;
-    overflow: visible;
-    margin: 0 40%;
-    padding: 0;
-    border: 0;
+    margin: 7% 40%;
     background: transparent;
     line-height: normal;
     cursor: pointer;
-    -moz-user-select: text;
-    /* Firefox */
-    -webkit-user-select: text;
-    /* Safari and Chrome */
-    -ms-user-select: text;
-    /* Internet Explorer/Edge */
-    user-select: text;
-    /* Standard property */
     display: block;
-    text-decoration: none;
-    text-transform: uppercase;
     padding: 16px 36px 22px;
-    background-color: #000000;
     color: #FCF6E5;
     border: 2px solid #FCF6E5;
     border-radius: 6px;
-    margin-bottom: 16px;
     transition: all 0.7s ease;
+    border-radius: 36px;
 }
 
-.btn:-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
 
 .btn--stripe {
     overflow: hidden;
@@ -61,6 +42,8 @@
     background-color: #FCF6E5;
     color: #000;
     border-color: #fff6e6;
+    box-shadow: 10px 10px 9999px 0px #FCF6E5;
+    z-index: 0;
 }
 
 .btn--stripe:hover:after {
@@ -69,10 +52,3 @@
     animation: stripe-slide 12s infinite linear forwards;
 }
 
-.btn--large {
-    width: 50%;
-}
-
-.btn--radius {
-    border-radius: 36px;
-}

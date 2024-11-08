@@ -25,7 +25,7 @@
 
 .image-container:hover img {
     transform: scale(1.1);
-    /* 鼠标放在图片上图片变大 */
+    /* 大小变化 */
     transform: rotateX(-10deg) rotateY(20deg);
 }
 
@@ -51,6 +51,9 @@
     text-align: start;
     text-indent: 1em;
 }
+.description h2 {
+    margin-bottom: 10px;
+}
 
 .description-border {
     position: absolute;
@@ -60,7 +63,6 @@
     height: 0;
     /* 初始高度为0 */
     border: 2px solid #F9EDAD;
-    /* 黄色边框 */
     border-radius: 0 30px 0 30px;
     transition: height 0.5s ease, opacity 0.5s ease;
     opacity: 0;

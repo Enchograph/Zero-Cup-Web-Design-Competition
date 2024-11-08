@@ -10,7 +10,7 @@ body {
 
     background-color: #000000;
     overflow-x: hidden;
-    font-family: iconfont, serif;
+    font-family: mainFontStyle, serif;
 }
 
 main {
@@ -22,7 +22,7 @@ header {
     height: 80px;
     width: 100%;
     position: fixed;
-    font-family: iconfont, serif;
+    font-family: mainFontStyle, serif;
     font-size: 1.5em;
     z-index: 9999;
 }
@@ -79,7 +79,7 @@ h1 {
 
     margin-top: auto;
     line-height: 4em;
-    font-family: iconfont, serif;
+    font-family: mainFontStyle, serif;
     font-size: 44px;
     text-transform: uppercase;
     color: #fff6e6;
@@ -88,10 +88,14 @@ h1 {
 p {
 
     margin-top: auto;
-    font-family: iconfont, serif;
+    font-family: mainFontStyle, serif;
     font-size: 20px;
     text-transform: uppercase;
     color: #fff6e6;
+}
+
+a {
+    text-decoration: none;
 }
 
 #top-bar ul {
@@ -107,7 +111,7 @@ p {
     margin-right: 10px;
 }
 
-/* 二级菜单初始状态 */
+/* 二级菜单 */
 #top-bar li ul {
     position: absolute;
     background: rgba(30, 30, 30, 0.8);
@@ -122,19 +126,14 @@ p {
     /* 使用 max-height 实现展开动画 */
 }
 
-/* 悬浮时显示二级菜单并缓缓展开 */
 #top-bar li:hover ul {
     max-height: 300px;
-    /* 设置一个足够大的最大高度，以容纳所有内容 */
-    padding: 5px 0;
-    /* 设置显示时的内边距 */
 }
 
 #top-bar li a {
     display: inline-block;
     /* 让链接根据内容宽度自动调整 */
     padding: 0 20px;
-    /* 给左右适当的内边距 */
     text-decoration: none;
     transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
     color: #fff6e6;
@@ -150,7 +149,6 @@ p {
     text-align: center;
 }
 
-/* 调整二级菜单项的字体大小 */
 #top-bar li ul li {
     display: flex;
     justify-content: center;
@@ -169,7 +167,6 @@ p {
     height: 100%;
     text-align: center;
     margin: 0 auto;
-    /* 设置内边距，使其与一级菜单的悬浮边框一致 */
     transition: background-color 0.3s ease, border 0.3s ease;
     display: inline-block;
     /* 使二级菜单项自适应文字宽度 */

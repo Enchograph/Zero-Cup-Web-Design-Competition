@@ -17,7 +17,7 @@
 - 从2000年至2024年各届奥运会的实拍图及徽标：<br><p>    奥运会官网</p>
 - 游戏美术：作者手绘
 - 游戏音效：<br><p>    pixabay.com</p>
-- 游戏背景音乐：<br><p>    [AllEightBits@Youtube](https://www.youtube.com/watch?v=Bp2ZpzqsvJk)</p><p>    版权所属：HoyoMix, AllEightBits@Youtube</p>
+- 游戏背景音乐：<br><p>    [AllEightBits@Youtube](https://www.youtube.com/watch?v=Bp2ZpzqsvJk)</p><p>    音乐版权所属：HoYoMix, AllEightBits@Youtube</p>
 
 ## 适合分辨率：
 - 宽度1300像素以上

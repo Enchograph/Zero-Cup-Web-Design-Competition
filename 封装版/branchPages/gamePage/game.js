@@ -136,27 +136,16 @@ function generateShuttlecock() {
 function endGame() {
     // 清除画布
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // 显示失败图像
     player.state = 'fail';
-    drawPlayer();  // 重新绘制玩家角色，确保显示playerFail.png
-
-    // 暂停背景音乐
+    drawPlayer();
     bgMusic.pause();
-
-    // 清除所有羽毛球
     game.shuttlecocks = [];
-
     // 显示重新开始按钮
     document.getElementById('restartButton').style.display = 'block';
-
-    // 更新最高分
     updateHighestScore();
-
     // 停止生成新的羽毛球
     clearInterval(shuttlecockInterval);
-
-    // 移除键盘事件监听器，防止按键影响游戏结束后的状态
+    // 移除键盘事件监听器
     document.removeEventListener('keydown', handleKeyDown);
 }
 
@@ -188,15 +177,11 @@ function handleCollision(shuttlecock) {
             player.successImage = null;
             player.state = 'stand';
         }, 500);
-
-        // 播放击球成功音效
         playSound(successSound);
     } else {
         if (player.state === 'defenseA' || player.state === 'defenseB') {
-            // 播放击球打空音效
             playSound(missSound);
         } else {
-            // 播放击球失败音效
             playSound(failSound);
         }
 
