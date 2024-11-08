@@ -1,4 +1,4 @@
-# “运动健儿 振澜奥运”   <p>    ——2024年武汉大学“零杯”网页设计大赛零组作品</p>
+# “运动健儿 振翮奥运”   <p>    ——2024年武汉大学“零杯”网页设计大赛零组作品</p>
 
 ## 主题：
 - 奥运健儿风采展示
@@ -19,5 +19,5 @@
 - 游戏音效：<br><p>    pixabay.com</p>
 - 游戏背景音乐：<br><p>    [AllEightBits@Youtube](https://www.youtube.com/watch?v=Bp2ZpzqsvJk)</p><p>    音乐版权所属：HoYoMix, AllEightBits@Youtube</p>
 
-## 适合分辨率：
-- 宽度1300像素以上
+## 适宜分辨率：
+- 宽度1300像素及以上
