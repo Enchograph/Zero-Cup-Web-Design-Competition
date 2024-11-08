@@ -14,15 +14,8 @@
 
 
 ### 待办
-- sports页面
-<img src="./OriginalResources/readme/sports.png" width="50%">
-- 标题栏改进 增加三级界面入口
-<img src="./OriginalResources/readme/顶栏.png" width="50%">
-- 在主页的前两个section末加“详细内容”按钮，按钮样式已在styles.css .btn类中提供
 <br>页面美化
-<br>小游戏
 <br>响应式设计
-<br>亮色/暗色模式
 
 ##借物表
 -奥运会官网：从2000年至2024年各届奥运会的实拍图及徽标。
