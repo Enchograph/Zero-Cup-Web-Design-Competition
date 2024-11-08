@@ -193,3 +193,9 @@ footer {
     border-color: rgba(255, 255, 255, 0.2);
 
 }
+
+.span{
+    display: inline-block;
+    height: 350px;
+    width: 0;
+}

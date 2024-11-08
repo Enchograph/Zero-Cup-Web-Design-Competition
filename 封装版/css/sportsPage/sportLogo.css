@@ -41,9 +41,15 @@
     transition: opacity 0.6s ease, transform 0.65s ease;
     transform: translateY(-100%);
     margin-bottom: 10px;
+    margin-top: 20px;
     /* 为动画提供空间 */
     overflow: hidden;
     /* 确保边框不会超出描述文字的边界 */
+}
+
+.description p{
+    text-align: start;
+    text-indent: 1em;
 }
 
 .description-border {

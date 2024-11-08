@@ -128,23 +128,39 @@ function generateShuttlecock() {
     game.shuttlecocks.push(new Shuttlecock(type));
 
     // 随机生成下一次羽毛球的生成间隔时间
-    const randomInterval = Math.floor(Math.random() * 500) + 900;
+    const randomInterval = Math.floor(Math.random() * 500) + 800;
     setTimeout(generateShuttlecock, randomInterval);
 }
 
 // 结束游戏
 function endGame() {
-    clearInterval(shuttlecockInterval);
-    document.removeEventListener('keydown', handleKeyDown);
-    document.getElementById('restartButton').style.display = 'block';
-    clearInterval(shuttlecockInterval);
-    document.removeEventListener('keydown', handleKeyDown);
+    // 清除画布
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // 在游戏结束时更新最高分
+    // 显示失败图像
+    player.state = 'fail';
+    drawPlayer();  // 重新绘制玩家角色，确保显示playerFail.png
+
+    // 暂停背景音乐
+    bgMusic.pause();
+
+    // 清除所有羽毛球
+    game.shuttlecocks = [];
+
+    // 显示重新开始按钮
+    document.getElementById('restartButton').style.display = 'block';
+
+    // 更新最高分
     updateHighestScore();
 
-    document.getElementById('restartButton').style.display = 'block';
+    // 停止生成新的羽毛球
+    clearInterval(shuttlecockInterval);
+
+    // 移除键盘事件监听器，防止按键影响游戏结束后的状态
+    document.removeEventListener('keydown', handleKeyDown);
 }
+
+
 
 // 处理键盘按下事件
 function handleKeyDown(e) {
@@ -227,7 +243,7 @@ function gameLoop() {
 
     if (gameOver) {
         ctx.fillStyle = '#b8860b';
-        ctx.font = '25px Trajan Pro';
+        ctx.font = '25px TraBold';
         ctx.fillText('Game Over', canvas.width / 2 - 75, canvas.height / 2 + 30);
     } else {
         requestAnimationFrame(gameLoop);
