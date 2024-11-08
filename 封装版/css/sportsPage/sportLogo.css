@@ -1,0 +1,74 @@
+/*!徽标选择*/
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.image-container {
+    position: relative;
+    width: 200px;
+    margin-bottom: 20px;
+    margin: auto, 10%;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    /* 鼠标放在图片上图片变大 */
+    transform: rotateX(-10deg) rotateY(20deg);
+}
+
+.description {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    color: #fff6e6;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.65s ease;
+    transform: translateY(-100%);
+    margin-bottom: 10px;
+    /* 为动画提供空间 */
+    overflow: hidden;
+    /* 确保边框不会超出描述文字的边界 */
+}
+
+.description-border {
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    right: -20%;
+    height: 0;
+    /* 初始高度为0 */
+    border: 2px solid #F9EDAD;
+    /* 黄色边框 */
+    border-radius: 0 30px 0 30px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+    /* 防止边框影响鼠标事件 */
+}
+
+.image-container:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-container:hover .description-border {
+    height: 280%;
+    /* 鼠标悬停时，边框高度与描述文字相同 */
+    opacity: 1;
+}

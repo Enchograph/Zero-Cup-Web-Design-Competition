@@ -1,0 +1,186 @@
+@import url("../public/font.css");
+
+.nav-holder {
+    width: 80%;
+    height: max-content;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-width: 3px;
+    border-color: #00000000;
+    border-style: solid;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-holder:hover {
+    transform: scale(1.02);
+    height: max-content;
+    border-color: #fae596;
+}
+
+.nav-holder .nav-tag {
+    display: inline-block;
+    width: 13%;
+    height: 60px;
+    line-height: 50px;
+    font-size: 42px;
+    color: #666666;
+    transition: all 0.5s ease-in-out;
+    font-family: Exo;
+}
+
+.nav-holder .nav-tag a {
+    color: #666666;
+    text-decoration-line: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-holder:hover .nav-tag {
+    transform: scale(1.1);
+    color: #fae596;
+}
+
+.nav-holder .nav-tag a:hover {
+    transform: scale(1.1);
+    color: #fae596
+}
+
+.nav-holder .nav-back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 0px;
+    width: 100%;
+    /* background: linear-gradient(0deg,#fff6e6FFF 8.68%,#8D8D8D 48.19%,#000000 100%); */
+    background-size: 100%;
+    border-bottom-left-radius: 18px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-holder:hover .nav-back {
+    height: 940px;
+}
+
+.nav-holder .nav-intro section {
+    color: #fff6e6;
+    display: none;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .cover {
+    display: block;
+    float: left;
+    margin: 9px 9px 9px 9px;
+    width: 100%;
+    padding-bottom: 53.7%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    background-size: 100%;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .intro {
+    padding: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    height: 182px;
+    width: auto;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fae49673;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .intro p {
+    color: #b1b1b1;
+    font-family: Exo;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    color: #666666;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .intro:hover>p {
+    color: #dbdbdb;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .intro h2 {
+    font-family: Exo;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .button {
+    padding: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .button-style {
+    width: 150px;
+    height: 60px;
+    padding: 5px;
+    line-height: 60px;
+    border-width: 3px;
+    border-color: #666666;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    margin: 0 auto;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .button-style:hover {
+    transform: scale(1.05);
+    border-color: #fae596;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .button-style a {
+    text-decoration: none;
+    color: #fff6e6;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-holder .nav-intro .section-holder .inner-holder .button-style a:hover {
+    color: #fae596;
+}
+
+@media(max-width:1200px) {
+    .nav-holder .nav-intro .section-holder .inner-holder .intro p {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .nav-holder .nav-tag {
+        line-height: 40px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width:768px) {
+    .nav-holder .nav-intro .section-holder .inner-holder .intro p {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .nav-holder .nav-tag {
+        line-height: 40px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+    /* 添加字体设置 */
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* 使整个页面垂直居中 */
+}
+
+canvas {
+    display: block;
+    background-color: #FCF6E5;
+    margin: 0 auto;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+#highestScore {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.container{
+    width: 80%;
+        height: 800px;
+        position: relative;
+        /* 相对定位以便子容器绝对定位 */
+                background-image: url("gameBackground.jpg");
+                background-position: 50%, 50%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+}
+
+.child-container {
+    width: 800px;
+    /* 子容器的宽度 */
+    height: 100px;
+    /* 默认高度，后续会调整 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* 绝对定位 */
+    left: 50%;
+    /* 水平居中 */
+    transform: translateX(-50%);
+    /* 使容器居中 */
+}
+
+.container1score {
+    top: 250px;
+    /* 距容器顶部200px */
+    height: 100px;
+    /* 高度100px */
+}
+
+.container1canvas {
+    top: 50px;
+    top: 310px;
+    /* 距容器顶部310px（第一个子容器的底部+10px） */
+    height: 100px;
+    /* 高度100px */
+}
+
+.container1button {
+    top: 420px;
+    /* 距容器顶部420px（第二个子容器的底部+10px） */
+    height: 200px;
+    /* 高度200px */
+}
+
+   .restartButton {
+       background-color: #B69968;
+       border-radius: 12px;
+       border: none;
+       color: white;
+       padding: 16px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       -webkit-transition-duration: 0.4s;
+       transition-duration: 0.4s;
+       cursor: pointer;
+   }
+
+   .restartButton:hover {
+       background-color: #FFF9E8;
+       color: #b8860b;
+       border: 1px solid #ccc;
+   }

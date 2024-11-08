@@ -1,0 +1,62 @@
+@import url("../public/font.css");
+
+/*!gallery*/
+
+.gallery {
+    padding: 75px 0;
+    margin: 0 10%;
+    width: 1800px;
+    text-align: center;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 70vh;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+
+    &:hover {
+        cursor: pointer;
+        flex: 7;
+    }
+}
+
+.item-1 {
+    background-image: url(../../resources/public/olympicCities/2000Sydney.jpg);
+
+}
+
+.item-2 {
+    background-image: url(../../resources/public/olympicCities/2004Athens.jpg);
+}
+
+.item-3 {
+    background-image: url(../../resources/public/olympicCities/2012London.jpg);
+}
+
+.item-4 {
+    background-image: url(../../resources/public/olympicCities/2008Beijing.jpg);
+}
+
+.item-5 {
+    background-image: url(../../resources/public/olympicCities/2016Rio.jpg);
+}
+
+.item-6 {
+    background-image: url(../../resources/public/olympicCities/2020Tokyo.jpg);
+}
+
+.item-7 {
+    background-image: url(../../resources/public/olympicCities/2024Paris.jpg);
+}
+
+

@@ -1,0 +1,117 @@
+@import url("../public/font.css");
+
+/*!sportsinside*/
+/* 容器样式 */
+.containerSpr {
+    width: 1250px;
+    height: 540px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 重叠的图片样式 */
+.containerSpr img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease, z-index 0s ease, filter 0.5s ease;
+}
+
+/* 初始 z-index 设置 */
+.containerSpr img:nth-of-type(1) {
+    z-index: 1;
+    transform-origin: 0px 270px;
+}
+
+.containerSpr img:nth-of-type(2) {
+    z-index: 2;
+    transform-origin: 120px 270px;
+}
+
+.containerSpr img:nth-of-type(3) {
+    z-index: 3;
+    transform-origin: 240px 270px;
+}
+
+.containerSpr img:nth-of-type(4) {
+    z-index: 4;
+    transform-origin: 360px 270px;
+}
+
+.containerSpr img:nth-of-type(5) {
+    z-index: 5;
+    transform-origin: 480px 270px;
+}
+
+/* 切分区域样式 */
+.slice {
+    flex: 1;
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: transparent;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+/* 使切分区域均匀分布在容器的左边 480px */
+.slice:nth-of-type(1) {
+    left: 0;
+}
+
+.slice:nth-of-type(2) {
+    left: 120px;
+}
+
+.slice:nth-of-type(3) {
+    left: 240px;
+}
+
+.slice:nth-of-type(4) {
+    left: 360px;
+}
+
+.slice:nth-of-type(5) {
+    left: 480px;
+    width: 770px;
+}
+
+/* 鼠标悬停效果，使对应图片浮到最上层并缩小 */
+.slice:nth-of-type(1):hover~img:nth-of-type(1),
+.slice:nth-of-type(2):hover~img:nth-of-type(2),
+.slice:nth-of-type(3):hover~img:nth-of-type(3),
+.slice:nth-of-type(4):hover~img:nth-of-type(4),
+.slice:nth-of-type(5):hover~img:nth-of-type(5) {
+    z-index: 6;
+    transform: scale(0.95);
+    filter: none;
+}
+
+/* 鼠标悬停时，其他图片亮度降低 */
+.slice:nth-of-type(1):hover~img:nth-of-type(2),
+.slice:nth-of-type(1):hover~img:nth-of-type(3),
+.slice:nth-of-type(1):hover~img:nth-of-type(4),
+.slice:nth-of-type(1):hover~img:nth-of-type(5),
+.slice:nth-of-type(2):hover~img:nth-of-type(1),
+.slice:nth-of-type(2):hover~img:nth-of-type(3),
+.slice:nth-of-type(2):hover~img:nth-of-type(4),
+.slice:nth-of-type(2):hover~img:nth-of-type(5),
+.slice:nth-of-type(3):hover~img:nth-of-type(1),
+.slice:nth-of-type(3):hover~img:nth-of-type(2),
+.slice:nth-of-type(3):hover~img:nth-of-type(4),
+.slice:nth-of-type(3):hover~img:nth-of-type(5),
+.slice:nth-of-type(4):hover~img:nth-of-type(1),
+.slice:nth-of-type(4):hover~img:nth-of-type(2),
+.slice:nth-of-type(4):hover~img:nth-of-type(3),
+.slice:nth-of-type(4):hover~img:nth-of-type(5),
+.slice:nth-of-type(5):hover~img:nth-of-type(1),
+.slice:nth-of-type(5):hover~img:nth-of-type(2),
+.slice:nth-of-type(5):hover~img:nth-of-type(3),
+.slice:nth-of-type(5):hover~img:nth-of-type(4) {
+    filter: brightness(0.5);
+}

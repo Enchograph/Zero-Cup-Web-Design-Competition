@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奥运会上的运动健儿 - 导航页</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="./olympics.css">
+    <link rel="icon" type="image/x-icon" href="../../images/icon/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <!-- <h1>陈宏宇初稿</h1> -->
+        <a href="../../index.html">
+            <img src="../../images/Logo.png" alt="网站Logo">
+        </a>
+        <nav aria-label="主导航">
+            <div id="top-bar">
+                <ul>
+                    <li><a href="../../index.html">首页</a></li>
+                    <li>
+                        <a href="../olympics/olympics.html">奥运会上的运动健儿</a>
+                        <ul aria-label="奥运会列表">
+                            <li><a href="../olympics/2000Sydney.html">2000 Sydney</a></li>
+                            <li><a href="../olympics/2004Athens.html">2004 Athens</a></li>
+                            <li><a href="../olympics/2008Beijing.html">2008 Beijing</a></li>
+                            <li><a href="../olympics/2012London.html">2012 London</a></li>
+                            <li><a href="../olympics/2016Rio.html">2016 Rio</a></li>
+                            <li><a href="../olympics/2020Tokyo.html">2020 Tokyo</a></li>
+                            <li><a href="../olympics/2024Paris.html">2024 Paris</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../sports/sports.html">运动场中的运动健儿</a>
+                        <ul aria-label="运动类表">
+                            <li><a href="../sports/0Basketball.html">Basketball</a></li>
+                            <li><a href="../sports/1Badminton.html">Badminton</a></li>
+                            <li><a href="../sports/2Volleyball.html">Volleyball</a></li>
+                            <li><a href="../sports/3Racing.html">Racing</a></li>
+                            <li><a href="../sports/4Pingpong.html">Pingpong</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../game/game.html">小游戏里的运动健儿</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="main">
+            <br><br><br><br><br><br>
+            <script>
+                function clear() {
+                    for (var i = 1; i <= 7; i++) {
+                        document.getElementById('s' + i).style.display = 'none';
+                    }
+                }
+                function select(tag) {
+                    for (var i = 1; i <= 7; i++) {
+                        document.getElementById('s' + i).style.display = 'none';
+                    }
+                    document.getElementById(tag).style.display = 'block';
+                }
+            </script>
+            <section class="olym">
+                <h1>奥运会上的运动健儿 - 导航页</h1>
+                <div class="nav-holder">
+                    <div class="nav-back" id="back"></div>
+                    <div class="nav-tag" style="left:0%" id="tag1"><a href="./2024Paris.html" onmouseenter="select('s1')"
+                            onmouseleave="clear()">2024</a></div>
+                    <div class="nav-tag" style="left:14%" id="tag2"><a href="./2020Tokyo.html" onmouseover="select('s2')"
+                            onmouseleave="clear()">2020</a></div>
+                    <div class="nav-tag" style="left:28%" id="tag3"><a href="./2016Rio.html" onmouseover="select('s3')"
+                            onmouseleave="clear()">2016</a></div>
+                    <div class="nav-tag" style="left:42%" id="tag4"><a href="./2012London.html" onmouseover="select('s4')"
+                            onmouseleave="clear()">2012</a></div>
+                    <div class="nav-tag" style="left:56%" id="tag5"><a href="./2008Beijing.html" onmouseover="select('s5')"
+                            onmouseleave="clear()">2008</a></div>
+                    <div class="nav-tag" style="left:70%" id="tag6"><a href="./2004Athens.html" onmouseover="select('s6')"
+                            onmouseleave="clear()">2004</a></div>
+                    <div class="nav-tag" style="left:84%" id="tag7"><a href="./2000Sydney.html" onmouseover="select('s7')"
+                            onmouseleave="clear()">2000</a></div>
+                    <div class="nav-intro">
+                        <section id="s1" class="section-holder" style="display:block">
+                            <div class="inner-holder">
+                                <div class="cover" style="background-image: url(../../images/Olympic-Cities/2024Paris.jpg);">
+                                </div>
+                                <div class="intro">
+                                    <h2 style="color: blue;"> Paris </h2>
+                                    <h2 style="color: #fff;"> Olympics </h2>
+                                    <h2 style="color: red;"> 2024 </h2>
+                                    <p>
+                                        2024年夏季奥林匹克运动会是2024年7月26日至8月11日在法国首都巴黎举办的夏季综合运动会。本届奥林匹克运动会中，危地马拉[1]、圣卢西亚[2]、多米尼克和博茨瓦纳首次夺得奥林匹克运动会金牌[3]，圣卢西亚、多米尼克、佛得角[4]、阿尔巴尼亚以及难民代表团首次赢得奥运奖牌。[5]
+                                        <br>
+                                        最终，美国代表团以40枚金牌、126枚奖牌，坐拥奖牌榜首位；中国代表团以40枚金牌、91枚奖牌排名第二；东道主法国代表团则拿下16枚金牌、64枚奖牌位列第五[6]。
+                                        <br>
+                                        本届夏季奥林匹克运动会也是现代夏季奥运会历史以来首次，同时也是整个现代奥运会历史以来第二次有多于一个国家（美国和中国）的代表团获得同样最多数量的金牌[7]。在个人参赛的选手中，中国游泳运动员张雨霏获得最多奖牌（一枚银牌、五枚铜牌），法国游泳运动员莱昂·马尔尚获得最多的金牌（共四枚）[8]。
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <div class="button-style"><a href="./2024Paris.html">查看更多</a></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="s2" class="section-holder">
+                            <div class="inner-holder">
+                                <div class="cover" style="background-image: url(../../images/Olympic-Cities/2020Tokyo.jpg);">
+                                </div>
+                                <div class="intro">
+                                    <h2 style="color: #fff;"> Tokyo </h2>
+                                    <h2 style="color: red;"> Olympics </h2>
+                                    <h2 style="color: #fff;"> 2020 </h2>
+                                    <p>
+                                        2020年夏季奥林匹克运动会是2021年7月23日至8月8日在日本首都东京都举办的夏季综合运动会。本届奥林匹克运动会中，百慕大[1]、菲律宾[2]和卡塔尔[3]夺得历史上首面奥林匹克运动会金牌，而土库曼斯坦[4]、圣马力诺[5]和布基纳法索[6]则夺得首面奥林匹克运动会奖牌。该届奥运约5000枚的金、银、铜奖牌都使用100%的回收电子产品制造而成[7]。
+                                        <br>
+                                        受2019冠状病毒病疫情影响，所有得奖运动员在颁奖仪式上需自行佩戴奖牌或由队友为自己佩戴奖牌[8]。
+                                        <br>
+                                        最终，美国代表团以39枚金牌、113枚奖牌，坐拥金牌榜和奖牌榜首位[9]；中国代表团以38枚金牌、89枚奖牌排名第二，金牌总数排名平了2012年伦敦奥运会上该国境外参赛的最佳纪录[10]，这是1912年以来首次出现夏季奥运奖牌榜前两名仅相差1枚金牌的情况[11]；东道主日本代表团则拿下27枚金牌、58枚奖牌位列第三，创该国参加奥运会以来的最好成绩[12]。
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <div class="button-style"><a href="./2020Tokyo.html">查看更多</a></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="s3" class="section-holder">
+                            <div class="inner-holder">
+                                <div class="cover" style="background-image: url(../../images/Olympic-Cities/2016Rio.jpg);">
+                                </div>
+                                <div class="intro">
+                                    <h2 style="color: green;"> Rio </h2>
+                                    <h2 style="color: rgb(20, 32, 70);"> Olympics </h2>
+                                    <h2 style="color: #ffee2e;"> 2016 </h2>
+                                    <p>
+                                        2016年夏季奥林匹克运动会于2016年8月5日至21日在巴西里约热内卢举行，距离1896年雅典首届奥运会有120年。共有207个国家和地区的11,238名运动员参加了28个大项、306个小项的角逐。
+                                        <br>
+                                        86个国家和地区的代表团至少获得一枚奖牌，其中59个代表团至少获得一枚金牌。美国获得的金牌最多（46枚），同时也是奖牌总数最多的国家，共获得121枚奖牌。东道国巴西在奖牌榜上位居第13名，获得7枚金牌、6枚银牌和6枚铜牌。
+                                        <br>
+                                        越南、科索沃、斐济、新加坡、波多黎各、巴林、约旦、塔吉克斯坦和科特迪瓦在本届奥运会上首次获得奥运金牌，其中巴林因2012年夏季奥林匹克运动会的奖牌重新分配获得过金牌，同时科索沃、斐济和约旦也是第一次获得奥运奖牌。科威特射手费海德·代哈尼成为第一位获得金牌的独立参赛者，[12][13]但他以前曾代表科威特获得过奖牌。
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <div class="button-style"><a href="./2016Rio.html">查看更多</a></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="s4" class="section-holder">
+                            <div class="inner-holder">
+                                <div class="cover" style="background-image: url(../../images/Olympic-Cities/2012London.jpg);">
+                                </div>
+                                <div class="intro">
+                                    <h2 style="color: blue;"> London </h2>
+                                    <h2 style="color: red;"> Olympics </h2>
+                                    <h2 style="color: white;"> 2012 </h2>
+                                    <p>
+                                        2012年夏季奥林匹克运动会正式名称第三十届奥林匹克运动会，是7月27日至8月12日在英国首都伦敦举办的夏季综合运动会，来自204个国家和地区的10768名运动员参加26个大项、39个分项，共302个小项[1][2]。
+                                        <br>
+                                        86个国家或地区获奖牌，其中55个获金牌。美国队以47枚金牌、104枚奖牌占据金牌和奖牌榜首位，创下美国不是东道主时的金牌数新纪录[3]。东道主英国队[注
+                                        1]拿下29枚金牌，65枚奖牌，是1908年后该国的最好成绩[5]。
+                                        <br>
+                                        迈克尔·菲尔普斯与蜜茜·富兰克林均以四枚金牌位居本届奥运会首位，菲尔普斯还以六枚奖牌位于运动员奖牌榜首[6]。巴林[注
+                                        2]、博茨瓦纳、塞浦路斯、加蓬、格林纳达、危地马拉、黑山都在伦敦实现奥运金牌零的突破[1]。黑山往年曾并入塞尔维亚与黑山或南斯拉夫代表团参赛[8][注
+                                        3]。塞尔维亚跆拳道运动员米莉察·曼迪奇为该国赢得首枚金牌[9]，但塞尔维亚运动员过去曾代表南斯拉夫夺金[10]。
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <div class="button-style"><a href="./2012London.html">查看更多</a></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="s5" class="section-holder">
+                            <div class="inner-holder">
+                                <div class="cover" style="background-image: url(../../images/Olympic-Cities/2008Beijing.jpg);">
+                                </div>
+                                <div class="intro">
+                                    <h2 style="color: rgb(255, 0, 0);"> Beijing </h2>
+                                    <h2 style="color: rgb(255, 230, 0);"> Olympics </h2>
+                                    <h2 style="color: rgb(255, 0, 0);"> 2008 </h2>
+                                    <p>
+                                        2008年夏季奥林匹克运动会奖牌榜根据国家奥林匹克委员会的排名排列[1]。2008年夏季奥林匹克运动会于2008年8月8日至8月24日在中华人民共和国首都北京市举行，共有来自204个国家和地区的11028名运动员参加了28个大项，共302项赛事的比赛[2]。
+                                        <br>
+                                        一共有来自86个代表团的运动员赢得了奖牌，另外118个代表团没有获得奖牌，54个代表团赢得了至少1枚金牌。无论是在获得金牌的代表团数量还是获得奖牌的代表团数量都创下了夏季奥运会的新纪录。东道主中国队一共赢得了48枚金牌，名列第一，这也是中国参加夏季奥运会历史上首次位居榜首。美国队获得的奖牌总数最多，有112枚。来自阿富汗[3]、毛里求斯[4]、苏丹[5]、塔吉克斯坦[6]和多哥[7]代表团的运动员获得了该国参加夏季奥运会历史上的第一枚奖牌。来自蒙古[8]和巴拿马[9]代表团的运动员赢得了该国参加夏季奥运会历史上的第一枚金牌。塞尔维亚游泳运动员米洛拉德·查维奇为该国赢得一枚银牌，成为该国以独立国家名义获得的首枚奥运会奖牌。塞尔维亚在历史上曾作为南斯拉夫或塞尔维亚和黑山的一部分参加奥运会并赢得过奖牌[10]。萨摩亚在2016年重新药检后的奖牌重分配中获得历史首面奖牌。
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <div class="button-style"><a href="./2008Beijing.html">查看更多</a></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="s6" class="section-holder">
+                            <div class="inner-holder">
+                                <div class="cover" style="background-image: url(../../images/Olympic-Cities/2004Athens.jpg);">
+                                </div>
+                                <div class="intro">
+                                    <h2 style="color: skyblue"> Athens </h2>
+                                    <h2 style="color: rgb(255, 255, 255);"> Olympics </h2>
+                                    <h2 style="color: rgb(0, 81, 255);"> 2004 </h2>
+                                    <p>
+                                        2004年夏季奥林匹克运动会是21世纪所举行的首届夏季奥运会，该运动会每四年举办一届。本届奥运会于2004年8月13日至8月29日在希腊雅典举行，共有来自201个国家和地区的10,625名运动员参加了28个项目共301个比赛，其中基里巴斯和东帝汶是第一次参加奥运会。[1]
+                                        本列表列出各国家和地区代表团在本届奥运会中获奖情况。
+                                        <br>
+                                        74个国家和地区的代表团至少获得一枚奖牌。美国获得的金牌和银牌最多（金牌36枚，银牌40枚），同时也是奖牌总数最多的国家，共获得101枚奖牌。中国获得的金牌数位居第二，但奖牌总数排名第三，这是中国在2008年北京奥运会之前的最好成绩。俄罗斯获得的金牌数排名第三，但奖牌总数第二，也是获得铜牌最多的国家（38枚）。东道国希腊在奖牌榜上位居第15名，获得6枚金牌、6枚银牌和4枚铜牌，[1]创下1896年以来奖牌总数的最好成绩。
+                                        <br>
+                                        澳大利亚成为第一个在举办夏季奥运会后，下一届奥运会金牌总数增加的国家。
+                                        <br>
+                                        阿拉伯联合酋长国、巴拉圭和厄立特里亚在本届奥运会上首次获得奖牌。以色列、智利、多米尼加共和国、格鲁吉亚、中华台北和阿拉伯联合酋长国第一次赢得奥运金牌。
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <div class="button-style"><a href="./2004Athens.html">查看更多</a></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="s7" class="section-holder">
+                            <div class="inner-holder">
+                                <div class="cover" style="background-image: url(../../images/Olympic-Cities/2000Sydney.jpg);">
+                                </div>
+                                <div class="intro">
+                                    <h2 style="color: rgb(0, 7, 131)"> Sydney </h2>
+                                    <h2 style="color: rgb(255, 255, 255);"> Olympics </h2>
+                                    <h2 style="color: rgb(255, 0, 0);"> 2000 </h2>
+                                    <p>
+                                        2000年夏季奥林匹克运动会于2000年9月15日至10月1日在澳大利亚悉尼举行，此乃奥运史上，继1956年墨尔本奥运会后第二次由澳大利亚举办之奥运会，亦为南半球所举办的第二次奥运会，全球199个国家和地区的10,651多名运动员参加了28个大项、300个小项的角逐。
+                                        <br>
+                                        80个国家和地区的代表团至少获得一枚奖牌。美国获得的金牌最多（37枚），同时也是奖牌总数最多的国家，共获得93枚奖牌。东道国澳大利亚在奖牌榜上位居第4名，获得16枚金牌、25枚银牌和17枚铜牌。喀麦隆、哥伦比亚、拉脱维亚、莫桑比克和斯洛文尼亚在本届奥运会上首次获得金牌。越南、巴巴多斯、北马其顿、科威特、吉尔吉斯斯坦和沙特阿拉伯在本届奥运会上首次获得奖牌。
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <div class="button-style"><a href="./2000Sydney.html">查看更多</a></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+    </div>
+    
+    <footer>
+        <br><br><br>
+        <p>“零杯”网页设计大赛零组参赛作品</p>
+        <br><br><br>
+    </footer>
+</body>
+
+</html>

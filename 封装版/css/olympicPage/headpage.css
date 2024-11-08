@@ -1,0 +1,19 @@
+.headpage {
+    width: calc(100vw);
+    height: calc(80vh);
+    background-size: calc(100vw);
+}
+
+.headpage-cover {
+    position: absolute;
+    top: calc(70vh);
+    margin-bottom: 0;
+    width: calc(100vw);
+    height: calc(10vh);
+    background: linear-gradient(0deg, #000000 0%, #ff000000 100%);
+    color: #fff6e6
+}
+
+.main {
+    text-align: center;
+}

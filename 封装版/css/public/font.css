@@ -1,0 +1,19 @@
+@font-face {
+    font-family: iconfont;
+    src: url(../../resources/public/fonts/trajan-pro-cufonfonts/TrajanPro-Regular.ttf), url(../../resources/public/fonts/HanYiZhongSongJian-1.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Exo;
+    src: url(../../resources/public/fonts/Exo-Medium.ttf);
+}
+
+@font-face {
+    font-family: Yahei;
+    src: url(../../resources/public/fonts/微软雅黑.ttf);
+}
+
+@font-face {
+    font-family: TraBold;
+    src: url(../../resources/public/fonts/trajan-pro-cufonfonts/TrajanPro-Bold.otf);
+}

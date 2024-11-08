@@ -1,0 +1,6 @@
+span::before {
+    content: '';
+    display: inline-block;
+    height: 350px;
+    width: 0;
+}
