@@ -3,9 +3,10 @@
 /*!sportsinside*/
 /* 容器样式 */
 .containerSpr {
+    
     width: 1250px;
     height: 540px;
-    margin: 0 auto;
+    margin: 75px auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -88,7 +89,7 @@
 .slice:nth-of-type(4):hover~img:nth-of-type(4),
 .slice:nth-of-type(5):hover~img:nth-of-type(5) {
     z-index: 6;
-    transform: scale(0.95);
+    transform: scale(0.9);
     filter: none;
 }
 

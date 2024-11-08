@@ -127,8 +127,8 @@ function generateShuttlecock() {
     const type = Math.random() > 0.5 ? 'A' : 'B';
     game.shuttlecocks.push(new Shuttlecock(type));
 
-    // 随机生成下一次羽毛球的生成间隔时间（500到1000毫秒之间）
-    const randomInterval = Math.floor(Math.random() * 500) + 700;
+    // 随机生成下一次羽毛球的生成间隔时间
+    const randomInterval = Math.floor(Math.random() * 500) + 900;
     setTimeout(generateShuttlecock, randomInterval);
 }
 

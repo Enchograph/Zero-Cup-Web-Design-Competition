@@ -18,7 +18,7 @@ main {
 }
 
 header {
-    background-color: rgba(35, 28, 26, 0.8);
+    background-color: rgba(30, 30, 30, 0.8);
     height: 80px;
     width: 100%;
     position: fixed;
@@ -110,7 +110,7 @@ p {
 /* 二级菜单初始状态 */
 #top-bar li ul {
     position: absolute;
-    background: rgba(35, 28, 26, 0.8);
+    background: rgba(30, 30, 30, 0.8);
     top: 100%;
     width: 100%;
     left: 0;
@@ -189,4 +189,7 @@ p {
 
 footer {
     text-align: center;
+    border-top-style: dotted;
+    border-color: rgba(255, 255, 255, 0.2);
+
 }
