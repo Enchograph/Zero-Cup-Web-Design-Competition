@@ -43,11 +43,4 @@
 ## 待办
 <br>页面美化
 <br>响应式设计
-
-##借物表
--奥运会官网：从2000年至2024年各届奥运会的实拍图及徽标。<br>
--pixabay.com：游戏音效<br>
--https://www.youtube.com/watch?v=Bp2ZpzqsvJk<br>
-    游戏背景音乐。<br>
-    版权所属：HoyoMix, AllEightBits@youtube
     
