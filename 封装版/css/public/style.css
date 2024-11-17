@@ -72,7 +72,38 @@ header a:hover {
     color: #96ABFA;
     text-decoration: none;
 }
+/* 汉堡菜单按钮样式 */
+#menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* 垂直居中 */
+    font-size: 2em;
+    color: #fff6e6;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+}
 
+/* 媒体查询：小屏幕样式 */
+@media (max-width: 1300px) {
+    #nav-menu {
+        display: none;
+        /* 隐藏导航菜单 */
+    }
+
+    #menu-toggle {
+        display: block;
+        /* 显示汉堡菜单按钮 */
+    }
+
+    #top-bar {
+        display: none;
+        /* 隐藏 top-bar 元素 */
+    }
+}
 
 
 h1 {
