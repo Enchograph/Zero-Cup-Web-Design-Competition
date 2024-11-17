@@ -8,10 +8,10 @@
 
 ## 成员：
 
-- 陈宏宇 计算机科学专业 负责 mainPage, sportsPage 与 gamePage 页面的设计与实现。
-- 崔天旭 电子信息专业 负责 olympicPage 页面的设计与实现。
-- 孙雷鑫 网络安全专业 负责 sportsPage 三级页面的素材收集与实现。
-- 李旭祺 电子信息专业 负责测试与异常实现的部分修复
+- [@Enchograph](https://github.com/Enchograph) 负责 mainPage, sportsPage 与 gamePage 页面的设计与实现。
+- [@ArbeiterKlassen](https://github.com/ArbeiterKlassen) 负责 olympicPage 页面的设计与实现。
+- [@Anybaker](https://github.com/Anybaker) 负责 sportsPage 三级页面的素材收集与实现。
+- [@EricsZero](https://github.com/EricsZero) 负责测试与异常实现的部分修复
 
 ## 依赖：
 
